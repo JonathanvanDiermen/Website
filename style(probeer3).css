@@ -1,0 +1,1045 @@
+body {
+    background: black !important;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    width: 100%;
+    height: 100%;
+}
+.logo {
+    margin-top: 0px;
+    width: 15vh;
+    height: 15vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+}
+.benedenindex{
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    font-size: 12px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+#naam1 {
+    position: absolute;
+    width: 97%;
+    font-size: 4.5vh;
+}
+.containeradress {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    width: 5vh;
+    z-index: 2;
+    cursor: pointer
+}
+.top1 {
+    background: black;
+    position: relative;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2vh;
+    z-index: 1;
+}
+#adress1 {
+    margin-right: 5%;
+}
+#adress2 {
+    margin-right: 5%;
+}
+#adress3 {
+    margin-right: 45%;
+}
+#adress4 {
+    margin-left: 5%;
+}
+#adress5 {
+    margin-left: 5%;
+}
+#adress6 {
+    margin-left: 5%;
+}
+#image { 
+    margin-top: 0px;
+    width: 85%;
+    height: 85%; 
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#welcome {
+    position: absolute;
+    top: 8px;
+    left: 56px;
+    width: 45%;
+    height: 90%;
+    margin-left: 8%;
+    font-size: 4vh;
+    margin-top: 0%;
+}
+.imagetekst {
+    position: absolute;
+    top: 8vh;
+    left: 56px;
+    width: 30%;
+    height: 90%;
+    margin-left: 8%;
+}
+.tekst {
+    margin-top: 0%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.projecttitle{
+    text-align: center; 
+    font-size: 2.5vh
+}
+
+.section1 {
+    background-color:;
+    display: inline-block;
+}
+.section2 {
+    background-color: ;
+    display: inline-block;
+}
+.section3 {
+    background-color: ;
+    display: inline-block;
+}
+.section4 {
+    background-color:;
+    display: inline-block;
+}
+.section5 {
+    background-color: ;
+    display: inline-block;
+}
+.block5{
+    margin-top: -25vh;
+    font-size: 2.5vh;
+}
+.containeradress .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 2.5vh;
+}
+
+.containeradress:hover .tooltiptext {
+    visibility: visible;
+}
+
+.myprojectsname {
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 2vh;
+}
+.myprofilename {
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 13%;
+    padding-top: 10px;
+}
+.imagecontainer {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.5%;
+    max-height: 5vh;
+}
+#sectionchange {
+    
+}
+#containerprojectchange{
+    
+}
+
+.containerproject {
+    position: relative;
+    float: left;
+    margin-left: 7%;
+    margin-top: 10px;
+    width: 16%;  /* The size of the project image */
+    padding-top: 28px;
+    cursor: pointer;
+}
+.imageproject {
+    z-index: 1;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middleproject {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    margin-bottom: 50%;
+    width: 100%;
+    max-width: 95%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.textproject {
+    background-color: #000;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.containerproject:hover .imageproject {
+    opacity: 0.6;
+}
+.containerproject:hover .middleproject {
+    opacity: 1;
+}
+
+
+.containerproject1 {
+    position: relative;
+    float: left;
+    margin-left: 7%;
+    margin-top: 10px;
+    width: 16%;
+    padding-top: 28px;
+    cursor: pointer;
+}
+.imageproject1 {
+    z-index: 1;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middleproject1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    margin-bottom: 50%;
+    width: 100%;
+    max-width: 95%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.textproject1 {
+    background-color: #000;
+    color: white;
+    font-size: 2.6vh;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.containerproject1:hover .imageproject1 {
+    opacity: 0.6;
+}
+.containerproject1:hover .middleproject1 {
+    opacity: 1;
+}
+
+
+.containerproject2 {
+    position: relative;
+    float: left;
+    margin-left: 7%;
+    margin-top: 10px;
+    width: 16%;
+    padding-top: 28px;
+    cursor: pointer;
+}
+.imageproject2 {
+    z-index: 1;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middleproject2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    margin-bottom: 50%;
+    width: 100%;
+    max-width: 95%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.textproject2 {
+    background-color: #000;
+    color: white;
+    font-size: 17px;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.containerproject2:hover .imageproject2 {
+    opacity: 0.6;
+}
+.containerproject2:hover .middleproject2 {
+    opacity: 1;
+}
+
+
+.containerproject3 {
+    position: relative;
+    float: left;
+    margin-left: 7%;
+    margin-top: 10px;
+    width: 16%;
+    padding-top: 28px;
+    cursor: pointer;
+}
+.imageproject3 {
+    z-index: 1;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middleproject3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    margin-bottom: 50%;
+    width: 100%;
+    max-width: 95%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.textproject3 {
+    background-color: #000;
+    color: white;
+    font-size: 17px;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.containerproject3:hover .imageproject3 {
+    opacity: 0.6;
+}
+.containerproject3:hover .middleproject3 {
+    opacity: 1;
+}
+
+
+#textprojectchange {
+    
+}
+* {
+  box-sizing: border-box;
+}
+#textprojectchange {
+    
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: inherit;
+    padding-top: 80%;
+    margin-bottom: -80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    opacity: 1;
+}
+.modalimage1 {
+    max-height: 115%;
+    max-width: 25%;
+    padding-bottom: 15%;
+    padding-left: 3%;
+    padding-top: 3%;
+    position: absolute;
+    z-index: 5;
+}
+/* Modal Content */
+.modal-content {
+    display: block;
+    position: inherit;
+    background-color: #fefefe;
+    margin-top: -1150px;
+    margin-left: 12%;
+    margin-right: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 100%;
+    height: 100%;
+    max-width: 5000px;
+    max-height: 5000px;
+    z-index: -10;
+}
+/* The Close Button */
+.close {
+    z-index: 5;
+    color: white;
+    position: absolute;
+    margin-top: 54%;
+    top: 0px;
+    right: 60vh;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    outline-color: white;
+    font-weight: bold;
+    background-color: grey;
+    font-size: 3vh;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 30%;
+    margin-top: 50%;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 5;
+}
+.prev {
+    left: 30%;
+    margin-top: 50%;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 5;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    margin-left: -10vh;
+    position: absolute;
+    top: 5vh;
+    z-index: 5;
+    margin-top: 54%;
+    font-size: 1.8vh;
+    background-color: black;
+}
+
+.phototext {
+    color: #f2f2f2;
+    font-size: 1.7vh;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    padding-top: 190vh;
+    top: 0%;
+    text-align: center;
+    background-color: black;
+}
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.demoA {
+  opacity: 0.6;
+}
+
+.active,
+.demoA:hover {
+    opacity: 1;
+}
+
+.demoB {
+  opacity: 0.6;
+}
+
+.active,
+.demoB:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.SkillsLeft {
+    position: absolute;
+    width: 100%;
+    left: 3%;
+    color: gold;
+}
+.SkillsMiddle {
+    position: absolute;
+    right: -1.5vh;
+    width: 69%;
+    color: #FF0808;
+}
+.SkillsRight {
+    position: absolute;
+    right: 0px;
+    width: 37%;
+    color: plum;
+}
+#Skills {
+    margin-bottom: 30px;
+    font-size: 120%;
+    font-weight: 700;
+}
+#lil {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 20.5%;
+}
+#lim {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 34%;
+}
+#lir {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 63%;
+}
+#lil:hover{
+    background-color: #735E23;
+    padding: 0.5%;
+    width: 21.5%;
+    border-radius: 5%;
+}
+#lir:hover{
+    background-color: darkslateblue;
+    padding: 1.5%;
+    width: 63.5%;
+    border-radius: 5%;
+}
+#lim:hover{
+    background-color: #912302;
+    padding: 0.7%;
+    width: 34%;
+    border-radius: 5%;
+}
+.sterren{
+    position: absolute;
+    left: 21%;
+    margin-top: -1.5%;
+    color: white;
+}
+.sterrenM{
+    position: absolute;
+    left: 30%;
+    margin-top: -2%;
+    color: white;
+}
+.sterrenR{
+    position: absolute;
+    left: 50%;
+    margin-top: -4%;
+    color: white;
+}
+.Educatie {
+    position: absolute;
+    left: 30%;
+    margin-top: 0.2%;
+    color: deepskyblue;
+    right: 40%;
+}
+.EducatieTekst {
+    position: absolute;
+    left: 30%;
+    margin-top: 0.2%;
+    color: lightgrey;
+    right: 44%;
+}
+.Educatie1 {
+    position: absolute;
+    left: 30%;
+    margin-top: 10%;
+    color: deepskyblue;
+    right: 40%;
+}
+.EducatieTekst1 {
+    position: absolute;
+    left: 30%;
+    margin-top: -0%;
+    color: lightgrey;
+    right: 44%;
+}
+.highschool{
+    color: deepskyblue;
+    margin-top: 13%;
+}
+.work {
+    position: absolute;
+    color: forestgreen;
+    left: 60%;
+    margin-top: -24.5%;
+}
+.Job {
+    position: absolute;
+    left: 75%;
+    margin-top: -21.5%;
+    color: darkseagreen;
+}
+.Job0 {
+    position: absolute;
+    left: 60%;
+    margin-top: -21.5%;
+    color: darkseagreen;
+}
+.JobTekst {
+    position: absolute;
+    left: 75%;
+    margin-top: -18.5%;
+    color: lightgrey;
+    right: 5%;
+}
+.JobTime{
+    position: absolute;
+    left: 60%;
+    margin-top: -18.5%;
+    color: lightgrey;
+}
+.Job1 {
+    position: absolute;
+    left: 75%;
+    margin-top: -5.3%;
+    color: darkseagreen;
+}
+.Job2 {
+    position: absolute;
+    left: 60%;
+    margin-top: -5.3%;
+    color: darkseagreen;
+}
+.JobTekst1 {
+    position: absolute;
+    left: 75%;
+    margin-top: -2.5%;
+    color: lightgrey;
+    right: 5%;
+}
+.JobTime1{
+    position: absolute;
+    left: 60%;
+    margin-top: -2.5%;
+    color: lightgrey;
+}
+.Dutch:link, .Dutch:visited {
+    background-color: aqua;
+    font-size: 20px;
+    color: black;
+    padding: 9px;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2%;
+}
+.Dutch:hover, .Dutch:active {
+    background-color: aquamarine;
+}
+.English:link, .English:visited {
+    background-color: aqua;
+    font-size: 20px;
+    color: black;
+    padding: 9px;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 2%;
+}
+.English:hover, .English:active {
+    background-color: aquamarine;
+}
+@media only screen and (min-width: 1900px ) {
+    #image { 
+    width: 85%;
+    height: 85%; 
+}
+    #intro{
+        font-size: 3.7vh;
+    }
+}
+
+@media only screen and (max-width: 1536px ) {
+    #image { 
+    width: 85%;
+    height: 85%; 
+}
+    #intro{
+        font-size: 3.5vh;
+    }
+}
+@media only screen and (max-width: 1315px) {
+   #intro{
+        font-size: 3.3vh;
+    }
+    #image {
+        width: 90%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 1234px) {
+   #intro{
+        font-size: 3.0vh;
+    }
+    #image {
+        width: 90%;
+        height: 100%;
+    }
+    .projecttitle{
+        font-size: 2.2vh;
+    }
+}
+@media only screen and (max-width: 1122px) {
+   #intro{
+        font-size: 2.7vh;
+    }
+    #image {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 948px) {
+   #intro{
+        font-size: 2.4vh;
+    }
+    #image {
+        margin-left: 4%;
+        width: 95%;
+        height: 58vh;
+    }
+    .projecttitle{
+        margin-top: 5%;
+        font-size: 2.0vh;
+    }
+    #adress1 {
+    margin-right: 5%;
+        margin-left: -1%;
+    }
+    #adress2 {
+        margin-right: 5%;
+        margin-left: -2.5%;
+    }
+    #adress3 {
+        margin-right: 45%;
+        margin-left: -2.5%;
+    }
+    #adress4 {
+        margin-left: 15%;
+    }
+    #adress5 {
+        margin-left: 2.5%;
+    }
+    #adress6 {
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+   #intro{
+        font-size: 2.4vh;
+    }
+    #image {
+        margin-left: 4%;
+        width: 95%;
+        height: 55vh;
+    }
+    #welcome{
+        font-size: 3.5vh;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+   #intro{
+        font-size: 2.4vh;
+    }
+    #image {
+        margin-left: 4%;
+        width: 95%;
+        height: 53vh;
+    }
+    #containerprojectchange{
+        position: absolute;
+        margin-left: 20%;
+        margin-top: -2%;
+        width: 17.5%;
+    }
+    #containerprojectchange1{
+        position: absolute;
+        margin-left: 60%;
+        margin-top: -2%;
+        width: 17.5%;
+        
+    }
+    #containerprojectchange2{
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 35%;
+        width: 17.5%;
+        
+    }
+    #containerprojectchange3{
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 35%;
+        width: 17.5%;
+    }
+    #naam1{
+        font-size: 3.6vh;
+        top: 1.5vh;
+    }
+    .containeradress{
+        width: 4vh;
+        height: 4vh;
+    }
+    .myprojectsname{
+        margin-top: 0vh;
+    }
+    .projecttitle{
+        width: 130%;
+        margin-left: -15%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+   #intro{
+        font-size: 2.2vh;
+       margin-top: 0%;
+    }
+    #image {
+        margin-left: 4%;
+        width: 95%;
+        height: 50vh;
+    }
+    #welcome {
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+   #intro{
+        font-size: 2.0vh;
+       margin-top: 0%;
+    }
+    #image {
+        margin-left: 4%;
+        width: 95%;
+        height: 47vh;
+    }
+}
+@media only screen and (max-width: 720px) {
+   #intro{
+        font-size: 1.9vh;
+       margin-top: 0%;
+    }
+    #image {
+        margin-left: 4%;
+        width: 95%;
+        height: 45vh;
+    }
+}
+@media only screen and (max-width: 700px) {
+   #intro{
+        font-size: 2.5vh;
+       margin-top: 0%;
+       width: 40%;
+       margin-left: 2%;
+    }
+    #image {
+        margin-left: 60%;
+        margin-top: 20%;
+        width: 33%;
+        height: 33%;
+    }
+    #welcome {
+        width: 100%;
+        margin-left: 2%;
+        margin-top: 0%;
+    }
+}
+@media only screen and (max-width: 580px) {
+   #intro{
+        font-size: 2.5vh;
+       margin-top: -5%;
+       width: 45%;
+       margin-left: 0%;
+    }
+    #image {
+        margin-left: 63%;
+        margin-top: 32%;
+        width: 33%;
+        height: 33%;
+    }
+    #welcome {
+        width: 100%;
+        margin-top: 0%;
+        margin-left: -5%;
+    }
+}
+
+@media only screen and (max-height: 740px) {
+   #intro{
+        font-size: 2.5vh;
+       margin-top: -5%;
+       width: 45%;
+       margin-left: 0%;
+    }
+    #image {
+        margin-left: 63%;
+        margin-top: 32%;
+        width: 33%;
+        height: 33%;
+    }
+    #welcome {
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-height: 1080px) {
+    #naam1 {
+        top: -1vh;
+    }
+    .imagetekst{
+        font-size: 2.9vh;
+    }
+    .modalimage1 {
+        margin-top: -60vh;
+    }
+}
+@media only screen and (max-height: 864px) {
+    #naam1 {
+        top: -1vh;
+    }
+    .imagetekst{
+        font-size: 3.4vh;
+    }
+    .modalimage1{
+        margin-top: -30vh;
+    }
+}
+@media only screen and (max-height: 720px) {
+    #naam1 {
+        top: 10vh;
+    }
+    .imagetekst{
+        font-size: 3.8vh;
+    }
+    .modalimage1 {
+        margin-top: 30vh;
+    }
+}
+@media only screen and (max-height: 618px) {
+    .modalimage1 {
+        margin-top: 0vh;
+    }
+    .imagetekst{
+        font-size: 4.2vh;
+    }
+    #naam1 {
+        margin-top: -8vh;
+    }
+}
