@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="assets/stylesheet/full-page-scroll.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onLoad="my_function();">
         <script src="full-page-scroll.js"></script>
         <script>
             (function($){
@@ -469,7 +469,11 @@
                         <h3 style="color: dodgerblue;">
                             Education
                         </h3>
-			<div data-tf-live="01JGE0MQC07VMRFH6TKS0K6T7N"></div><script src="//embed.typeform.com/next/embed.js"></script>
+			<script type="text/javascript">
+			function my_function {
+			<script src="//embed.typeform.com/next/embed.js"></script>
+			}
+			</script>
                         <h4 class="Educatie">Master - Human Computer Interaction</h4>
                         <h4 style="color: deepskyblue;">Utrecht University</h4>
                         <p class="EducatieTekst">Information Science offers an interesting mix of computing sciences, communication studies, organisational studies and psychology. Through this combination of aspects I am able to build bridges between people and technology, and between the needs of companies and IT solutions.</p>
