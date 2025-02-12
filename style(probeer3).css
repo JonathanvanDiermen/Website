@@ -15,6 +15,7 @@ body {
     pointer-events: none;
 }
 .benedenindex{
+    font-family: 'Open Sans', sans-serif !important;
     position: fixed;
     left: 0;
     bottom: 10px;
