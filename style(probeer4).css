@@ -1,0 +1,311 @@
+body {
+    background: black !important;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 15vh;
+    height: 15vh;
+    display: block;
+    pointer-events: none;
+}
+.image-container {
+    display: block;
+    background-color: #302d2b;
+    margin: 1% 10% 10% 10%;
+    position: relative;
+}
+
+#profile-image { 
+    margin: 0 auto;
+    width: 28%;
+    display: block;
+    position: relative;
+    left: 30%; /* Adjusted to move the image to the right */
+}
+#copyright{
+    position: fixed;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+#welcome-message {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 50%;
+    height: 90%;
+    margin-left: 0.5%;
+    font-size: 3vw;
+}
+.intro-text {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 50%;
+    height: 90%;
+    margin-left: 0.5%;
+    font-size: 2vw;
+}
+@media (max-width: 570px) {
+    .logo {
+        margin: 0 auto;
+        width: 15vw;
+        height: 15vw;
+        display: block;
+        pointer-events: none;
+    }
+    #welcome-message {
+        position: relative;
+        top: 0;
+        left: 0;;
+        width: 100%;
+        height: auto;
+        margin: 5%;
+        font-size: 5vw; /* Increased font size */
+    }
+
+    .intro-text {
+        position: relative;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        height: auto;
+        margin: 0;
+        font-size: 4vw; /* Increased font size */
+        padding-bottom: 5%;
+    }
+
+    #profile-image {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+.footer-text {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    font-size: 12px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.contact-container {
+    background: black;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2vh;
+    z-index: 1;
+}
+
+#name-title {
+    width: 100%;
+    font-size: 2.5vw;
+    margin: 0 auto;
+    margin-top: -2.8%;
+}
+
+.contact-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    height: 3vw;
+    width: 3vw;
+    z-index: 2;
+    cursor: pointer;
+    vertical-align: middle; /* Align vertically with name-title */
+}
+.contact-item .tooltip {
+    visibility: hidden;
+    width: 8vw;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: -80%;
+    font-size: 1.5vw;
+}
+
+.contact-item:hover .tooltip {
+    visibility: visible;
+}
+
+
+#linkedin { margin-right: 5%; }
+#instagram { margin-right: 5%; }
+#twitter { margin-right: 45%; }
+#phone { margin-left: 5%; }
+#email { margin-left: 5%; }
+#whatsapp { margin-left: 5%; }
+
+
+.text-content {
+    flex: 1; 
+    margin: -2% 6% 0;
+    overflow: hidden;
+}
+
+.education-container {
+    margin-top: 12%;
+    width: 48%; /* Adjust width to fit within text-content */
+    float: left; /* Float to the left */
+    box-sizing: border-box; 
+    font-size: 115%;
+}
+
+.job-container {
+    width: 48%; /* Adjust width to fit within text-content */
+    float: right; /* Float to the right */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 12%;
+    font-size: 115%;
+}
+@media (max-width: 790px) {
+    .job-container {
+        font-size: 95%;
+    }
+    .education-container {
+        font-size: 95%;
+    }
+}
+
+.intro-section,
+.cv-section {
+    display: inline-block;
+    height: 100vh;
+}
+
+.cv-container {
+    height: 100%; /* Make cv-container take the full height of cv-section */
+    margin-top: 0; /* Adjust margin as needed */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center children vertically */
+
+}
+
+.cv-links {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 0;
+    padding-top: 0.5%;
+}
+.cv-link:link,
+.cv-link:visited {
+    background-color: aqua;
+    font-size: 20px;
+    color: black;
+    padding: 9px;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    margin: 0 2%;
+}
+
+.cv-link:hover,
+.cv-link:active {
+    background-color: aquamarine;
+}
+
+.section-title {
+    color: forestgreen;
+    left: 60%;
+    margin-top: -24.5%;
+}
+.skills-header-tekst {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: -1vw;
+}
+.skills-left {
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    color: gold;
+    font-size: 1.6vw;
+}
+.tools-middle {
+    position: absolute;
+    right: -1.5vh;
+    width: 65%;
+    color: #FF0808;
+    font-size: 1.6vw;
+}
+.language-right {
+    position: absolute;
+    right: 0px;
+    width: 32%;
+    color: plum;
+    font-size: 1.6vw;
+}
+.stars-left {
+    position: absolute;
+    left: 19%;
+    margin-top: -1.5vw;
+    color: white;
+    font-size: 1.2vw;
+}
+.stars-middle {
+    position: absolute;
+    left: 30%;
+    margin-top: -1.5vw;
+    color: white;
+    font-size: 1.2vw;
+}
+.stars-right {
+    position: absolute;
+    left: 63%;
+    margin-top: -1.7vw;
+    color: white;
+    font-size: 1.2vw;
+}
+
+
+#skills-hover {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 27vw;
+}
+#tools-hover {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 27vw;
+}
+#language-hover {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 27vw;
+}
+#skills-hover:hover{
+    background-color: #735E23;
+    padding: 0.5vw;
+    border-radius: 5%;
+}
+#tools-hover:hover{
+    background-color: darkslateblue;
+    padding: 0.5vw;
+    border-radius: 5%;
+}
+#language-hover:hover{
+    background-color: #912302;
+    padding: 0.5vw;
+    border-radius: 5%;
+}
