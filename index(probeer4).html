@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jonathan van Diermen</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/9711e0a30d.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script> 
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>       
+        <link rel="stylesheet" href="style(probeer4).css">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheet/full-page-scroll.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="full-page-scroll.js"></script>
+        <script>
+            (function($){
+                $(document).on('contextmenu', 'img', function() {
+                    return false;
+                })
+            })(jQuery);
+        </script>
+        <div id="main" class="scroll-container">
+            <section class="intro-section">
+                <div>
+                    <span>
+                        <img class="logo" src="media/DITISHEM.png" alt="Logo van Jonathan van Diermen">
+                        <div class="image-container">
+                            <img src="media/ME.png" id="profile-image" alt="Profielfoto van mij"> 
+                            <h3 id="welcome-message">Hey, welcome on my page!</h3>
+                            <div id="intro-text" class="intro-text">
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-copyright" id="copyright"><script>document.write(new Date().getFullYear())</script> Copyright Jonathan van Diermen</i>
+                    </span>    
+                </div>
+            </section>
+            <section class="cv-section">
+                <div class="contact-container">     
+                    <div class="contact-item" id="linkedin">
+                        <input type="image" src="icons/linkedin-brands.svg" onclick="window.open('https://nl.linkedin.com/in/jonathan-van-diermen-02983616b')">
+                        <span class="tooltip">My LinkedIn</span>
+                    </div>
+                    <div class="contact-item" id="instagram">
+                        <input type="image" src="icons/instagram-brands.svg" onclick="window.open('https://www.instagram.com/capjona/')"> 
+                        <span class="tooltip">My Instagram</span>
+                    </div>
+                    <div class="contact-item" id="twitter">
+                        <input type="image" src="icons/twitter-brands.svg" onclick="window.open('https://twitter.com/JLBvanDiermen')">
+                        <span class="tooltip">My Twitter</span>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <input type="image" src="icons/phone-alt-solid.svg" onclick="window.location.href='tel:31622299092'">
+                        <span class="tooltip">Call me</span>
+                    </div>
+                    <div class="contact-item" id="email">
+                        <input type="image" src="icons/envelope-solid.svg" onclick="window.location.href='mailto: jonathanvandiermen@hotmail.com'">
+                        <span class="tooltip">Mail me</span>
+                    </div>
+                    <div class="contact-item" id="whatsapp">
+                        <input type="image" src="icons/whatsapp-brands.svg" onclick="window.open('https://api.whatsapp.com/send?phone=31622299092&text=')">
+                        <span class="tooltip">Whatsapp me</span>
+                    </div>
+                    <h1 id="name-title">JONATHAN VAN DIERMEN</h1>      
+                </div>
+                <div class="cv-container"> 
+                    <h5 class="cv-links"><a class="cv-link" href="media/CV%20Jonathan%20van%20Diermen.docx" download>Dutch</a>My CV<a class="cv-link" href="media/CV%20Jonathan%20van%20Diermen%20-%20Engels.docx" download>English</a></h5>
+                    <div class="text-content">
+                        <div class="education-container">
+                            <h3 class="section-title" style="color: dodgerblue;">Education</h3>
+                            <h4 class="cv-title">Master - Human-Computer Interaction</h4>
+                            <h4 class="cv-institution" style="color: deepskyblue;">Utrecht University</h4>
+                            <p class="cv-description">HCI is the study of how people interact with computers, especially as it relates to technology design. User-centered design, UI, and UX are combined with HCI to provide intuitive technology and products. As a HCI specialist, I consider how to develop and deploy computer systems that satisfy human users.</p>
+                            <p class="cv-duration" style="color: lightgrey;">Sep 2023 - Today</p>
+                            
+                            <h4 class="cv-title">Bachelor - Informatiekunde</h4>
+                            <h4 class="cv-institution" style="color: deepskyblue;">Utrecht University</h4>
+                            <p class="cv-description">Information Science offers an interesting mix of computing sciences, communication studies, organisational studies and psychology. Through this combination of aspects I am able to build bridges between people and technology, and between the needs of companies and IT solutions.</p>
+                            <p class="cv-duration" style="color: lightgrey;">Sep 2019 - May 2023</p>
+                        </div>
+                        <div class="job-container">
+                            <h3 class="section-title" style="color: forestgreen;">Work Experience</h3>
+                            <h4 class="cv-title">Part time - Sales</h4>
+                            <h4 class="cv-institution" style="color: darkseagreen;">Samsung</h4>
+                            <p class="cv-description">As a sales employee I help the customers find the right device they need. This required a lot of creative thinking in order to overcome problems customers stumbled upon in their lives.</p>
+                            <p class="cv-duration" style="color: lightgrey;">May 2021 - Today</p>
+                            <h4 class="cv-title">Part time - Host</h4>
+                            <h4 class="cv-institution" style="color: darkseagreen;">Coolblue</h4>
+                            <p class="cv-description">As a host it is my responsibility to manage the stream of customers by connecting them to the right employee. I am also responsible for the schedule and the desk rotations.</p>
+                            <p class="cv-duration" style="color: lightgrey;">Okt 2020 - Jan 2021</p>
+                        </div>
+                    </div>      
+                </div>
+            </section>
+            <section class="projects-section">
+                <div class="contact-container">     
+                    <div class="contact-item" id="linkedin">
+                        <input type="image" src="icons/linkedin-brands.svg" onclick="window.open('https://nl.linkedin.com/in/jonathan-van-diermen-02983616b')">
+                        <span class="tooltip">My LinkedIn</span>
+                    </div>
+                    <div class="contact-item" id="instagram">
+                        <input type="image" src="icons/instagram-brands.svg" onclick="window.open('https://www.instagram.com/capjona/')"> 
+                        <span class="tooltip">My Instagram</span>
+                    </div>
+                    <div class="contact-item" id="twitter">
+                        <input type="image" src="icons/twitter-brands.svg" onclick="window.open('https://twitter.com/JLBvanDiermen')">
+                        <span class="tooltip">My Twitter</span>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <input type="image" src="icons/phone-alt-solid.svg" onclick="window.location.href='tel:31622299092'">
+                        <span class="tooltip">Call me</span>
+                    </div>
+                    <div class="contact-item" id="email">
+                        <input type="image" src="icons/envelope-solid.svg" onclick="window.location.href='mailto: jonathanvandiermen@hotmail.com'">
+                        <span class="tooltip">Mail me</span>
+                    </div>
+                    <div class="contact-item" id="whatsapp">
+                        <input type="image" src="icons/whatsapp-brands.svg" onclick="window.open('https://api.whatsapp.com/send?phone=31622299092&text=')">
+                        <span class="tooltip">Whatsapp me</span>
+                    </div>
+                    <h1 id="name-title">JONATHAN VAN DIERMEN</h1>      
+                </div>
+                <h5 class="projects-links">My side projects</h5>
+                <div class="projects-container"> 
+                    <div class="containerproject">
+                        <img src="media/SSH0.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">SSH app</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                For the course Requirement Engineering I and a team mate had to work as a analyst for our client SSH to make a MVP of a new app that would replace their website entirely. We had to learn how to use Mendix for the high-fi prototype.
+                                <p>Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="containerproject">
+                        <img src="media/BB2.jpg" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">Birthday Buddy</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                Do you also HATE it when you find out it was your friends birthday when you'd been hanging with them all day? So I came up with an solution that helps me remember and also enables me to congratulate them with one click.
+                                <p>Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="containerproject">
+                        <img src="media/App1.jpg" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">Unitas app</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                A group of students and I have made an App for our fraternity. More than 1500 users can see evenst, updates, makes diner reservations and more.
+                                <p>Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="containerproject">
+                        <img src="media/SpiceRack4.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">Smart spice jar</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                For the course Interaction technology innovation, we had to make a product that was smart and enchanting. We came up with a smart spice rack! You can ask the computer for a certain spice mix and the corrosponding jars will then light up, and a voice will tell you which spices they are and how to use them!
+                                <p>Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                </div>
+            </section>
+            <section class="section4">
+                <div class="contact-container">     
+                    <div class="contact-item" id="linkedin">
+                        <input type="image" src="icons/linkedin-brands.svg" onclick="window.open('https://nl.linkedin.com/in/jonathan-van-diermen-02983616b')">
+                        <span class="tooltip">My LinkedIn</span>
+                    </div>
+                    <div class="contact-item" id="instagram">
+                        <input type="image" src="icons/instagram-brands.svg" onclick="window.open('https://www.instagram.com/capjona/')"> 
+                        <span class="tooltip">My Instagram</span>
+                    </div>
+                    <div class="contact-item" id="twitter">
+                        <input type="image" src="icons/twitter-brands.svg" onclick="window.open('https://twitter.com/JLBvanDiermen')">
+                        <span class="tooltip">My Twitter</span>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <input type="image" src="icons/phone-alt-solid.svg" onclick="window.location.href='tel:31622299092'">
+                        <span class="tooltip">Call me</span>
+                    </div>
+                    <div class="contact-item" id="email">
+                        <input type="image" src="icons/envelope-solid.svg" onclick="window.location.href='mailto: jonathanvandiermen@hotmail.com'">
+                        <span class="tooltip">Mail me</span>
+                    </div>
+                    <div class="contact-item" id="whatsapp">
+                        <input type="image" src="icons/whatsapp-brands.svg" onclick="window.open('https://api.whatsapp.com/send?phone=31622299092&text=')">
+                        <span class="tooltip">Whatsapp me</span>
+                    </div>
+                    <h1 id="name-title">JONATHAN VAN DIERMEN</h1>      
+                </div>
+                <div class="block5">
+                    <h5 class="cv-links">My skills and experience</h5>
+                    <div class="skills-left">
+                        <div style="color: darkgoldenrod;" class="skills-header-tekst">Skills</div>
+                        <li id="skills-hover" class="skill-item tekst">Python (<script>document.write(new Date().getFullYear()-2015)</script> years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="skills-hover" class="skill-item tekst">Flask (<script>document.write(new Date().getFullYear()-2018)</script> years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="skills-hover" class="skill-item tekst">React Native (<script>document.write(new Date().getFullYear()-2018)</script> years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                    </div>
+                    <div class="tools-middle">
+                        <div style="color: darkred" class="skills-header-tekst">Tools</div>
+                        <li id="tools-hover" class="tool-item tekst">Figma (<script>document.write(new Date().getFullYear()-2018)</script> years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="tools-hover" class="tool-item tekst">UML (<script>document.write(new Date().getFullYear()-2018)</script> years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="tools-hover" class="tool-item tekst">BPM(N) (<script>document.write(new Date().getFullYear()-2018)</script> years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                    </div>
+                    <div class="language-right">
+                        <div style="color: purple;" class="skills-header-tekst">Language</div>
+                        <li id="language-hover" class="language-item tekst">Dutch (Mother tongue)
+                            <div class="stars-right"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="language-hover" class="language-item tekst">English (Daily use)
+                            <div class="stars-right"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="language-hover" class="language-item tekst">German (understandable)
+                            <div class="stars-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="assets/javascript/full-page-scroll.js"></script>
+        <script type="text/javascript">
+            new fullScroll({
+                mainElement: 'main',
+                displayDots: true,
+                dotsPosition: 'left',
+                animateTime: 0.7,
+                animateFunction: 'ease'
+            });
+        </script>
+        <script>
+            var diff_ms = Date.now() - new Date(2000, 5, 28).getTime();
+            var age_dt = new Date(diff_ms); 
+            var age = Math.abs(age_dt.getUTCFullYear() - 1970);
+            
+            var diff_mss = Date.now() - new Date(2018, 9, 1).getTime();
+            var age_dtt = new Date(diff_mss); 
+            var agee = Math.abs(age_dtt.getUTCFullYear() - 1970);
+            if (agee == 2){
+               agee = 'second'}
+            if (agee == 3){
+               agee = 'third'}
+            if (agee == 4){
+               agee = 'fourth'}
+            if (agee == 2){
+               agee = 'fifth'}
+            document.getElementById("intro-text").innerHTML = "<p>My name is Jonathan van Diermen and I am "+ age + " years old. I am now in my " + agee +" year of the study information science at the University of Utrecht. In my spare time I play the electric guitar in my band and I like to build things, whether it is my own guitar, a smart mirror or an App. You can also ask me anything about space and space related things.</p>";
+        </script>
+    </body>
+</html>
