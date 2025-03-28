@@ -1,145 +1,796 @@
 body {
-    background: black;
-    color: white;
+    background: black !important;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif !important;
+    width: 100%;
+    height: 100%;
 }
+
 .logo {
-    margin-top: 0px;
-    width: 120px;
-    height: 120px;
+    margin: 0 auto;
+    width: 15vh;
+    height: 15vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    pointer-events: none;
 }
-.tekst {
-    margin-top: 80px;
-}
-#h1 {
-    position: sticky;
-    top: 5px;
+.image-container {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #302d2b;
+    margin: 1% 10% 10% 10%;
+    position: relative;
+}
+
+#profile-image { 
+    margin: 0 auto;
+    width: 28%;
+    display: block;
+    position: relative;
+    left: 30%; /* Adjusted to move the image to the right */
+}
+#copyright{
+    position: fixed;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+#welcome-message {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 50%;
+    height: 90%;
+    margin-left: 0.5%;
+    font-size: 3vw;
+}
+.intro-text {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 50%;
+    height: 90%;
+    margin-left: 0.5%;
+    font-size: 2vw;
+}
+.footer-text {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    font-size: 12px;
+    width: 100%;
+    color: white;
     text-align: center;
 }
-#icon1 {
-    color: white;
-    position: sticky;
-    margin-top: -58px;
-    top: 5px;
+.contact-container {
+    background: black;
+    position: relative;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: right;
-    padding-right: 8%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2vh;
+    z-index: 1;
+    margin-top: -1vw;
 }
-#icon2 {
-    color: white;
-    position: sticky;
-    top: 5px;
-    margin-top: -53px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: right;
-    padding-right: 16%;
+
+#name-title {
+    width: 100%;
+    font-size: 2.5vw;
+    margin: 0 auto;
+    margin-top: -2.8%;
 }
-#icon3 {
+
+.contact-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    height: 3vw;
+    width: 3vw;
+    z-index: 2;
+    cursor: pointer;
+    vertical-align: middle; /* Align vertically with name-title */
+}
+.contact-item .tooltip {
+    visibility: hidden;
+    width: 8vw;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: -80%;
+    font-size: 1.5vw;
+}
+
+.contact-item:hover .tooltip {
+    visibility: visible;
+}
+
+
+#linkedin { margin-right: 5%; }
+#github { margin-right: 5%; }
+#figma { margin-right: 45%; }
+#phone { margin-left: 5%; }
+#email { margin-left: 5%; }
+#whatsapp { margin-left: 5%; }
+
+
+.text-content {
+    flex: 1; 
+    margin: -2% 6% 0;
+    overflow: hidden;
+    font-size: 115%;
+}
+
+.education-container {
+    margin-top: 12%;
+    width: 48%; /* Adjust width to fit within text-content */
+    float: left; /* Float to the left */
+    box-sizing: border-box; 
+}
+
+.job-container {
+    width: 48%; /* Adjust width to fit within text-content */
+    float: right; /* Float to the right */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 12%;
+}
+
+
+.cv-institution {
+    color: deepskyblue;
+    margin-top: -1.5vw;
+}
+.cv-duration {
+    color: lightgrey;
+    margin-top: -1.5vw;
+}
+
+.cv-description {
+    margin-top: 0vw;
+}
+
+.intro-section,
+.cv-section {
+    display: inline-block;
+    height: 100vh;
+}
+
+.cv-container {
+    height: 100%; /* Make cv-container take the full height of cv-section */
+    margin-top: 0; /* Adjust margin as needed */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center children vertically */
+    font-size: 1.2vw;
+}
+
+.cv-links {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 0;
+    padding-top: 0.5%;
+}
+.cv-link:link,
+.cv-link:visited {
+    background-color: aqua;
+    font-size: 20px;
+    color: black;
+    padding: 9px;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    margin: 0 2%;
+}
+
+.cv-link:hover,
+.cv-link:active {
+    background-color: aquamarine;
+}
+
+.section-title {
+    color: forestgreen;
+    left: 60%;
+    margin-top: -24.5%;
+}
+.skills-header-tekst {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: -1vw;
+}
+.skills-left {
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    color: gold;
+    font-size: 1.6vw;
+}
+.tools-middle {
+    position: absolute;
+    right: -1.5vh;
+    width: 65%;
+    color: #FF0808;
+    font-size: 1.6vw;
+}
+.language-right {
+    position: absolute;
+    right: 0px;
+    width: 32%;
+    color: plum;
+    font-size: 1.6vw;
+}
+.stars-left {
+    position: absolute;
+    left: 19%;
+    margin-top: -1.5vw;
     color: white;
-    position: sticky;
-    top: 5px;
-    margin-top: -53px;
-    display: block;
+    font-size: 1.2vw;
+}
+.stars-middle {
+    position: absolute;
+    left: 30%;
+    margin-top: -1.5vw;
+    color: white;
+    font-size: 1.2vw;
+}
+.stars-right {
+    position: absolute;
+    left: 63%;
+    margin-top: -1.7vw;
+    color: white;
+    font-size: 1.2vw;
+}
+
+
+#skills-hover {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 27vw;
+}
+#tools-hover {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 27vw;
+}
+#language-hover {
+    list-style-type: none;
+    transition: 0.3s;
+    width: 27vw;
+}
+#skills-hover:hover{
+    background-color: #735E23;
+    padding: 0.5vw;
+    border-radius: 5%;
+}
+#tools-hover:hover{
+    background-color: #912302;
+    padding: 0.5vw;
+    border-radius: 5%;
+}
+#language-hover:hover{
+    background-color: darkslateblue;
+    padding: 0.5vw;
+    border-radius: 5%;
+}
+@media (max-width: 950px) {
+    .cv-container {
+        font-size: 1.8vw;
+    }
+    .textproject {
+        font-size: 15vw;
+    }
+}
+@media (max-width: 710px) {
+    .text-content {
+        margin-left: 7%;
+        font-size: 100%;
+    }
+    .cv-container {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 570px) {
+    .logo {
+        margin: 0 auto;
+        width: 15vw;
+        height: 15vw;
+        display: block;
+        pointer-events: none;
+    }
+    #welcome-message {
+        position: relative;
+        top: 0;
+        left: 0;;
+        width: 100%;
+        height: auto;
+        margin: 5%;
+        font-size: 5vw; /* Increased font size */
+    }
+
+    .intro-text {
+        position: relative;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        height: auto;
+        margin: 0;
+        font-size: 4vw; /* Increased font size */
+        padding-bottom: 5%;
+    }
+
+    #profile-image {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    .contact-item .tooltip {
+        left: -50%;
+    }
+    .cv-links {
+        font-size: 4vw;
+        z-index: 1;
+    }
+    .text-content {
+        margin-left: 10%;
+        margin-right: 3%;
+        margin-top: -15%;
+        font-size: 100%;
+    }
+    .cv-container {
+        font-size: 3.2vw;
+    }
+    .contact-item {
+        height: 4vw;
+        width: 4vw;
+    }
+    #linkedin { margin-right: 3%; }
+    #github { margin-right: 3%; }
+    #figma { margin-right: 45%; }
+    #phone { margin-left: 3%; }
+    #email { margin-left: 3%; }
+    #whatsapp { margin-left: 3%; }
+    #name-title {
+        font-size: 3vw;
+        margin-top: -3.9%;
+    }
+    .cv-link:link,
+    .cv-link:visited {
+        padding: 5px;
+        font-size: 3vw;
+        margin: 0 1%;
+    }
+    .section-title {
+        margin-top: 0;
+    }
+    .cv-title{
+        margin-top: -1vw;
+    }
+    .cv-institution{
+        margin-top: -2.2vw;
+    }
+    .cv-duration{
+        margin-top: -2vw;
+    }
+    .cv-description{
+        margin-top: -1vw;
+    }
+    .skills-header-tekst{
+        font-size: 3vw;
+        margin-bottom: 1vw;
+        margin-top: -1vw;	
+    }
+    .skills-left {
+        position: absolute;
+        width: 100%;
+        left: 5%;
+        color: gold;
+        font-size: 2.6vw;
+    }
+    .tools-middle {
+        position: absolute;
+        right: 32%;
+        width: 35%;
+        font-size: 2.6vw;
+        margin-top: 40%;
+    }
+    .language-right {
+        margin-top: 0%;
+        position: absolute;
+        left: 52%;
+        width: 65%;
+        font-size: 2.6vw;
+    }
+    .stars-left {
+        position: absolute;
+        left: 29%;
+        margin-top: -2.5vw;
+        color: white;
+        font-size: 2.2vw;
+    }
+    .stars-middle {
+        position: absolute;
+        left: 70%;
+        margin-top: -2.5vw;
+        width: 50%;
+        color: white;
+        font-size: 2.2vw;
+    }
+    .stars-right {
+        position: absolute;
+        left: 50%;
+        margin-top: -2.6vw;
+        color: white;
+        font-size: 2.2vw;
+    }
+    #skills-hover {
+        list-style-type: none;
+        transition: 0.3s;
+        width: 41vw;
+    }
+    #tools-hover {
+        list-style-type: none;
+        transition: 0.3s;
+        width: 37vw;
+    }
+    #language-hover {
+        list-style-type: none;
+        transition: 0.3s;
+        width: 45vw;
+    }
+    
+}
+@media (max-width: 370px) {
+    .text-content{
+        font-size: 4.1vw;
+    }
+    #profile-image {
+        width: 80%;
+    }
+    #welcome-message {
+        width: 90%;
+        font-size: 8vw; /* Increased font size */
+    }
+
+    .intro-text {
+        font-size: 5vw; /* Increased font size */
+    }
+    .contact-item .tooltip {
+        left: -60%;
+        font-size: 2.8vw;
+    }
+}
+@media (max-width: 290px) {
+    #profile-image {
+        width: 90%;
+    }
+    #welcome-message {
+        width: 90%;
+        font-size: 10vw; /* Increased font size */
+    }
+
+    .intro-text {
+        font-size: 7vw; /* Increased font size */
+    }
+    .text-content{
+        font-size: 4.5vw;
+    }
+}
+.projects-section {
+    display: inline-block;
+    height: 100vh;
+}
+
+.projects-links {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 0vw;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: inherit;
+    padding-top: 80%;
+    margin-bottom: -80%;
     margin-left: auto;
     margin-right: auto;
-    text-align: right;
-    padding-right: 24%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    opacity: 1;
+}
+.modalimage1 {
+    max-height: 115%;
+    max-width: 25%;
+    padding-bottom: 15%;
     padding-left: 3%;
+    padding-top: 3%;
+    position: absolute;
+    z-index: 5;
 }
-#icon4 {
-    color: white;
-    position: sticky;
-    top: 5px;
-    margin-top: -53px;
+/* Modal Content */
+.modal-content {
     display: block;
-    margin-left: auto;
+    position: inherit;
+    background-color: #fefefe;
+    margin-top: -1150px;
+    margin-left: 12%;
     margin-right: auto;
-    text-align: left;
-    padding-left: 8%;
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 100%;
+    height: 100%;
+    max-width: 5000px;
+    max-height: 5000px;
+    z-index: -10;
 }
-#icon5 {
+/* The Close Button */
+.close {
+    z-index: 5;
     color: white;
-    position: sticky;
-    top: 5px;
-    margin-top: -53px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    padding-left: 16%;
+    position: absolute;
+    margin-top: 54%;
+    top: 0px;
+    right: 60vh;
+    font-size: 5vh;
+    font-weight: bold;
 }
-#icon6 {
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
     color: white;
-    position: sticky;
-    top: 5px;
-    margin-top: -53px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    padding-left: 24%;
-    padding-right: 3%
+    outline-color: white;
+    font-weight: bold;
+    background-color: grey;
+    font-size: 3vh;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
 }
-@media only screen and (max-width: 980px) {
-    #h1 {
-        font-size: 30px;
+
+/* Position the "next button" to the right */
+.next {
+    right: 30%;
+    margin-top: 50%;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 5;
+}
+.prev {
+    left: 30%;
+    margin-top: 50%;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 5;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    margin-left: -10vh;
+    position: absolute;
+    top: 5vh;
+    z-index: 5;
+    margin-top: 54%;
+    font-size: 1.8vh;
+    background-color: black;
+}
+
+.phototext {
+    color: #f2f2f2;
+    font-size: 1.7vh;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    padding-top: 190vh;
+    top: 0%;
+    text-align: center;
+    background-color: black;
+}
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#textprojectchange {
+    
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+.imagecontainer {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.5%;
+    max-height: 5vh;
+}
+#sectionchange {
+    
+}
+#containerprojectchange{
+    
+}
+
+.textproject {
+    background-color: #000;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* ...existing code... */
+
+.projects-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 0%; /* Optional: Add some space between the columns */
+    padding-left: 5vw;
+    margin-top: 0vw;
+}
+
+.containerproject {
+    width: 70%; /* Ensure these containers take full width of their grid cell */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    cursor: pointer;
+    position: relative;
+}
+
+.imageproject {
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middleproject {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-bottom: 50%;
+    width: 100%;
+    max-width: 95%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.projecttitle {
+    text-align: center; /* Center align the project title */
+    align-items: center;
+}
+.textproject {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1vw;
+}
+
+.containerproject:hover .imageproject {
+    opacity: 0.6;
+}
+
+.containerproject:hover .middleproject {
+    opacity: 1;
+}
+@media (max-width: 1150px) {
+    .textproject {
+        margin-top: -3.2vw;
+        font-size: 1.3vw;
     }
 }
-@media only screen and (max-width: 890px) {
-    #h1 {
-        font-size: 25px;
-    }
-    h1 {
-        font-size: 25px;
+@media (max-width: 950px) {
+    .textproject {
+        margin-top: -3.9%;
+        font-size: 1.2vw;
     }
 }
-@media only screen and (max-width: 890px) {
-  h1 {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width: 790px) {
-    #h1 {
-        font-size: 20px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr); /* Two equal columns */
+        margin-left: 10vw;
     }
-    h1 {
-        font-size: 20px;
+    .containerproject {
+        width: 65%; /* Ensure these containers take full width of their grid cell */
     }
-}
-@media only screen and (max-width: 660px) {
-    #h1 {
-        font-size: 20px;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    #icon1{
-        padding-right: 5%; 
-    }
-    #icon2{
-        padding-right: 10%; 
-    }
-    #icon3{
-        padding-right: 15%; 
-        padding-left: 1%;
-    }
-    #icon4{
-        padding-left: 5%; 
-    }
-    #icon5{
-        padding-left: 10%; 
-    }
-    #icon6{
-        padding-left: 15%;
-        padding-right: 1%;
+    .textproject {
+        background-color: #000;
+        color: white;
+        padding: 3px;
+        border-radius: 10px;
+        font-size: 1.5vw;
     }
 }
+
+@media (max-width: 612px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        margin-left: 10vw;
+    }
+    .containerproject {
+        width: 55%; /* Ensure these containers take full width of their grid cell */
+    }
+    .textproject {
+        background-color: #000;
+        color: white;
+        padding: 3px;
+        border-radius: 10px;
+        font-size: 1.9vw;
+    }
+}
+
+/* ...existing code... */
+

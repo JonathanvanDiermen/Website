@@ -2,92 +2,306 @@
 <html>
     <head>
         <title>Jonathan van Diermen</title>
-        <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/3c993178a6.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/9711e0a30d.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script> 
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>       
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheet/full-page-scroll.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <img class="logo" src="DITISHEM%20kopie.png">
-        <h1 id="h1"></h1>
-        <!-- voor herschalen scherm, check de class en id in style.css -->
-        <h1 id='icon1' href='https://nl.linkedin.com/in/jonathan-van-diermen-02983616b'><i class=''></i></h1>
-        <h1 id="icon2" href=''><i class=''></i></h1>
-        <h1 id="icon3" href=''><i class=''></i></h1>
-        <h1 id="icon4" href=''><i class=''></i></h1>
-        <h1 id="icon5" href=''><i class=''></i></h1>
-        <h1 id="icon6" href=''><i class=''></i></h1>
+        <script src="full-page-scroll.js"></script>
         <script>
-            $(document).ready(function () {
-
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 53) { 
-                        $('.logo').attr({"src":"leeg.png", "class":"logo"});
-                        $('#h1').html("JONATHAN VAN DIERMEN");
-                        $('#h1').attr('style', 'background-color:black;');
-                        $('#icon1').attr('class', 'fab fa-linkedin');
-                        $('#icon2').attr('class', 'fab fa-twitter');
-                        $('#icon3').attr('class', 'fab fa-instagram');
-                        $('#icon4').attr('class', 'fas fa-envelope');
-                        $('#icon5').attr('class', 'fas fa-phone-alt');
-                        $('#icon6').attr('class', 'fab fa-whatsapp');
-                        $('.tekst').attr('style', 'margin-top:-53px;');
-                    } if ($(this).scrollTop() < 130) {
-                        $('.logo').attr({"src":"DITISHEM%20kopie.png", "class":"logo"});
-                        $('#h1').html("");
-                        $('#h1').attr('style', '');
-                        $('#icon1').attr('class', '');
-                        $('#icon2').attr('class', '');
-                        $('#icon3').attr('class', '');
-                        $('#icon4').attr('class', '');
-                        $('#icon5').attr('class', '');
-                        $('#icon6').attr('class', '');
-                        $('.tekst').attr('style', 'margin-top:80px;');
-                    }
-                });
+            (function($){
+                $(document).on('contextmenu', 'img', function() {
+                    return false;
+                })
+            })(jQuery);
+        </script>
+        <div id="main" class="scroll-container">
+            <section class="intro-section">
+                <div>
+                    <span>
+                        <img class="logo" src="media/DITISHEM.png" alt="Logo van Jonathan van Diermen">
+                        <div class="image-container">
+                            <img src="media/ME.png" id="profile-image" alt="Profielfoto van mij"> 
+                            <h3 id="welcome-message">Hey, welcome on my page!</h3>
+                            <div id="intro-text" class="intro-text">
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-copyright" id="copyright"><script>document.write(new Date().getFullYear())</script> Copyright Jonathan van Diermen</i>
+                    </span>    
+                </div>
+            </section>
+            <section class="projects-section">
+                <div class="contact-container">     
+                    <div class="contact-item" id="linkedin">
+                        <input type="image" src="icons/linkedin-brands.svg" onclick="window.open('https://nl.linkedin.com/in/jonathan-van-diermen-02983616b')">
+                        <span class="tooltip">My LinkedIn</span>
+                    </div>
+                    <div class="contact-item" id="github">
+                        <input type="image" src="icons/github-brands.svg" onclick="window.open('https://github.com/JonathanvanDiermen')"> 
+                        <span class="tooltip">My GitHub</span>
+                    </div>
+                    <div class="contact-item" id="figma">
+                        <input type="image" src="icons/figma-brands.svg" onclick="window.open('https://www.figma.com/@jonathanvandier')">
+                        <span class="tooltip">My Figma</span>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <input type="image" src="icons/CV-brands.svg" onclick="window.open('media/CV Jonathan van Diermen.pdf')">
+                        <span class="tooltip">My CV</span>
+                    </div>
+                    <div class="contact-item" id="email">
+                        <input type="image" src="icons/Cover-letter.svg" onclick="window.open('media/CoverLetter Jonathan van Diermen.pdf')">
+                        <span class="tooltip">My Cover letter</span>
+                    </div>
+                    <div class="contact-item" id="whatsapp">
+                        <input type="image" src="icons/envelope-solid.svg" onclick="window.open('https://tally.so/r/mZeJqe')">
+                        <span class="tooltip">My email</span>
+                    </div>
+                    <h1 id="name-title">JONATHAN VAN DIERMEN</h1>      
+                </div>
+                <h5 class="cv-links">My side projects</h5>
+                <div class="projects-container"> 
+                    <div class="containerproject">
+                        <img src="media/SSH0.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">SSH app</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                For the Requirements Engineering course, a teammate and I took on the role of analysts for our client, SSH, to develop an MVP of a new app designed to completely replace their website. To create a high-fidelity prototype, we also had to learn how to use Mendix.
+                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="containerproject">
+                        <img src="media/Pushbullet.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">Birthday Buddy</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                Don’t you hate it when you forget to set your alarm or find out too late that there’s a massive traffic jam, making you late? I’ve built a personal assistant that helps me stay ahead, integrating with my calendar, tasks, Maps, Weather, Philips Hue, and many more APIs.
+                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="containerproject">
+                        <img src="media/App1.jpg" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">Unitas app</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                A group of fellow students and I developed an app for our fraternity, serving over 1,500 users. It allows members to view events, stay updated, make dinner reservations, and many more.
+                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="containerproject">
+                        <img src="media/SpiceRack4.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
+                        <h4 class="projecttitle">Smart spice jar</h4>
+                        <div class="middleproject">
+                            <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
+                                For the Interaction Technology Innovation course, we designed a product that had to be both smart and enchanting. Our solution? A smart spice rack! Simply ask for a spice mix, and the corresponding jars will light up while a voice guides you through the spices and how to use them.
+                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                </div>
+            </section>
+            <section class="cv-section">
+                <div class="contact-container">     
+                    <div class="contact-item" id="linkedin">
+                        <input type="image" src="icons/linkedin-brands.svg" onclick="window.open('https://nl.linkedin.com/in/jonathan-van-diermen-02983616b')">
+                        <span class="tooltip">My LinkedIn</span>
+                    </div>
+                    <div class="contact-item" id="github">
+                        <input type="image" src="icons/github-brands.svg" onclick="window.open('https://github.com/JonathanvanDiermen')"> 
+                        <span class="tooltip">My GitHub</span>
+                    </div>
+                    <div class="contact-item" id="figma">
+                        <input type="image" src="icons/figma-brands.svg" onclick="window.open('https://www.figma.com/@jonathanvandier')">
+                        <span class="tooltip">My Figma</span>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <input type="image" src="icons/CV-brands.svg" onclick="window.open('media/CV Jonathan van Diermen.pdf')">
+                        <span class="tooltip">My CV</span>
+                    </div>
+                    <div class="contact-item" id="email">
+                        <input type="image" src="icons/Cover-letter.svg" onclick="window.open('media/CoverLetter Jonathan van Diermen.pdf')">
+                        <span class="tooltip">My Cover letter</span>
+                    </div>
+                    <div class="contact-item" id="whatsapp">
+                        <input type="image" src="icons/envelope-solid.svg" onclick="window.open('https://tally.so/r/mZeJqe')">
+                        <span class="tooltip">My email</span>
+                    </div>
+                    <h1 id="name-title">JONATHAN VAN DIERMEN</h1>      
+                </div>
+                <div class="cv-container"> 
+                    <h5 class="cv-links">My CV</h5>
+                    
+                    <div class="text-content">
+                        <div class="education-container">
+                            <h3 class="section-title" style="color: dodgerblue;">Education</h3>
+                            <h4 class="cv-title">Master - Human-Computer Interaction</h4>
+                            <h4 class="cv-institution">Utrecht University</h4>
+                            <p class="cv-duration">Sep 2023 - Today</p>
+                            <p class="cv-description">HCI is the study of how people interact with computers, especially as it relates to technology design. User-centered design, UI, and UX are combined with HCI to provide intuitive technology and products. As a HCI specialist, I consider how to develop and deploy computer systems that satisfy human users.</p>
+                            
+                            <h4 class="cv-title">Bachelor - Information Science</h4>
+                            <h4 class="cv-institution">Utrecht University</h4>
+                            <p class="cv-duration">Sep 2019 - May 2023</p>
+                            <p class="cv-description">Information Science offers an interesting mix of computing sciences, communication studies, organisational studies and psychology. Through this combination of aspects I am able to build bridges between people and technology, and between the needs of companies and IT solutions.</p>
+                            
+                        </div>
+                        <div class="job-container">
+                            <h3 class="section-title" style="color: forestgreen;">Work Experience</h3>
+                            <h4 class="cv-title">Full time - Intership</h4>
+                            <h4 class="cv-institution" style="color: darkseagreen;">TrainTool</h4>
+                            <p class="cv-duration" style="color: lightgrey;">Nov 2024 - April 2025</p>
+                            <p class="cv-description">As a UX researcher, I investigated how we can create and implement a learning environment within TrainTool using gamification in which students not only learn effectively, but also remain motivated and involved. I used the three pillars of the Self-Determination Theory: autonomy, competence and relatedness.</p>
+                            
+                            <h4 class="cv-title">Part time - ICT-Specialist smartbar</h4>
+                            <h4 class="cv-institution" style="color: darkseagreen;">MediaMarkt</h4>
+                            <p class="cv-duration" style="color: lightgrey;">Nov 2023 - Current</p>
+                            <p class="cv-description">As an ICT specialist, I helped all the customers with their variety of tech problems. This required a lot of creative thinking in order to overcome problems customers stumbled upon in their lives</p>
+                            
+                        </div>
+                    </div>      
+                </div>
+            </section>
+            <section class="section4">
+                <div class="contact-container">     
+                    <div class="contact-item" id="linkedin">
+                        <input type="image" src="icons/linkedin-brands.svg" onclick="window.open('https://nl.linkedin.com/in/jonathan-van-diermen-02983616b')">
+                        <span class="tooltip">My LinkedIn</span>
+                    </div>
+                    <div class="contact-item" id="github">
+                        <input type="image" src="icons/github-brands.svg" onclick="window.open('https://github.com/JonathanvanDiermen')"> 
+                        <span class="tooltip">My GitHub</span>
+                    </div>
+                    <div class="contact-item" id="figma">
+                        <input type="image" src="icons/figma-brands.svg" onclick="window.open('https://www.figma.com/@jonathanvandier')">
+                        <span class="tooltip">My Figma</span>
+                    </div>
+                    <div class="contact-item" id="phone">
+                        <input type="image" src="icons/CV-brands.svg" onclick="window.open('media/CV Jonathan van Diermen.pdf')">
+                        <span class="tooltip">My CV</span>
+                    </div>
+                    <div class="contact-item" id="email">
+                        <input type="image" src="icons/Cover-letter.svg" onclick="window.open('media/CoverLetter Jonathan van Diermen.pdf')">
+                        <span class="tooltip">My Cover letter</span>
+                    </div>
+                    <div class="contact-item" id="whatsapp">
+                        <input type="image" src="icons/envelope-solid.svg" onclick="window.open('https://tally.so/r/mZeJqe')">
+                        <span class="tooltip">My email</span>
+                    </div>
+                    <h1 id="name-title">JONATHAN VAN DIERMEN</h1>      
+                </div>
+                <div class="block5">
+                    <h5 class="cv-links">My skills and experience</h5>
+                    <div class="skills-left">
+                        <div style="color: darkgoldenrod;" class="skills-header-tekst">Skills</div>
+                        <li id="skills-hover" class="skill-item tekst">Python (<script>document.write(new Date().getFullYear()-2015)</script> years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="skills-hover" class="skill-item tekst">HTML5 (<script>document.write(new Date().getFullYear()-2018)</script> years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="skills-hover" class="skill-item tekst">Flask (4 years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="skills-hover" class="skill-item tekst">GitHub (2 years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="skills-hover" class="skill-item tekst">React Native (2 years) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="skills-hover" class="skill-item tekst">Mendix (1 year) 
+                            <div class="stars-left"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                    </div>
+                    <div class="tools-middle">
+                        <div style="color: darkred" class="skills-header-tekst">Tools</div>
+                        <li id="tools-hover" class="tool-item tekst">Figma (<script>document.write(new Date().getFullYear()-2022)</script> years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="tools-hover" class="tool-item tekst">BPM(N) (5 years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="tools-hover" class="tool-item tekst">Lucidchart (3 years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="tools-hover" class="tool-item tekst">UML (4 years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="tools-hover" class="tool-item tekst">Adobe XD (2 years) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="tools-hover" class="tool-item tekst">PowerBI (1 year) 
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                    </div>
+                    <div class="language-right">
+                        <div style="color: purple;" class="skills-header-tekst">Language</div>
+                        <li id="language-hover" class="language-item tekst">Dutch (Mother tongue)
+                            <div class="stars-right"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="language-hover" class="language-item tekst">English (Daily use)
+                            <div class="stars-right"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="language-hover" class="language-item tekst">German (understandable)
+                            <div class="stars-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </li>
+                        <br>
+                        <li id="language-hover" class="language-item tekst">Chords and Tabs (perfect)
+                            <div class="stars-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </li>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="assets/javascript/full-page-scroll.js"></script>
+        <script type="text/javascript">
+            new fullScroll({
+                mainElement: 'main',
+                displayDots: true,
+                dotsPosition: 'left',
+                animateTime: 0.7,
+                animateFunction: 'ease'
             });
         </script>
-        <p class="tekst">What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-      What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-      What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-       <!-- <img src="NAAM.png"> -->
+        <script>
+            var diff_ms = Date.now() - new Date(2000, 5, 28).getTime();
+            var age_dt = new Date(diff_ms); 
+            var age = Math.abs(age_dt.getUTCFullYear() - 1970);
+            
+            var diff_mss = Date.now() - new Date(2018, 9, 1).getTime();
+            var age_dtt = new Date(diff_mss); 
+            var agee = Math.abs(age_dtt.getUTCFullYear() - 1970);
+            if (agee == 2){
+               agee = 'second'}
+            if (agee == 3){
+               agee = 'third'}
+            if (agee == 4){
+               agee = 'fourth'}
+            if (agee == 2){
+               agee = 'fifth'}
+            document.getElementById("intro-text").innerHTML = "<p>My name is Jonathan van Diermen and I am "+ age + " years old. I am now in my second year of the master Human-Computer Interaction at the University of Utrecht. In my spare time I play the electric guitar in my band and I like to build things, whether it is my own guitar, a smart mirror or an App. You can also ask me anything about space and space related things.</p>";
+        </script>
     </body>
 </html>
