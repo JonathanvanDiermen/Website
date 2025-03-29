@@ -400,7 +400,7 @@ body {
         right: 32%;
         width: 35%;
         font-size: 2.6vw;
-        margin-top: 40%;
+        margin-top: 50%;
     }
     .language-right {
         margin-top: 0%;
@@ -412,14 +412,14 @@ body {
     .stars-left {
         position: absolute;
         left: 29%;
-        margin-top: -2.5vw;
+        margin-top: -2.65vw;
         color: white;
         font-size: 2.2vw;
     }
     .stars-middle {
         position: absolute;
         left: 70%;
-        margin-top: -2.5vw;
+        margin-top: -2.65vw;
         width: 50%;
         color: white;
         font-size: 2.2vw;
@@ -427,7 +427,7 @@ body {
     .stars-right {
         position: absolute;
         left: 50%;
-        margin-top: -2.6vw;
+        margin-top: -2.65vw;
         color: white;
         font-size: 2.2vw;
     }
@@ -470,7 +470,7 @@ body {
 }
 @media (max-width: 290px) {
     #profile-image {
-        width: 90%;
+        width: 80%;
     }
     #welcome-message {
         width: 90%;
@@ -481,7 +481,7 @@ body {
         font-size: 7vw; /* Increased font size */
     }
     .text-content{
-        font-size: 4.5vw;
+        font-size: 4.2vw;
     }
 }
 .projects-section {
