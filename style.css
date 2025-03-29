@@ -450,10 +450,10 @@ body {
 }
 @media (max-width: 370px) {
     .text-content{
-        font-size: 4.1vw;
+        font-size: 4vw;
     }
     #profile-image {
-        width: 80%;
+        width: 60%;
     }
     #welcome-message {
         width: 90%;
@@ -470,7 +470,7 @@ body {
 }
 @media (max-width: 290px) {
     #profile-image {
-        width: 80%;
+        width: 60%;
     }
     #welcome-message {
         width: 90%;
@@ -481,7 +481,7 @@ body {
         font-size: 7vw; /* Increased font size */
     }
     .text-content{
-        font-size: 4.2vw;
+        font-size: 4vw;
     }
 }
 .projects-section {
@@ -789,9 +789,11 @@ img.hover-shadow {
         padding: 3px;
         border-radius: 10px;
         font-size: 1.9vw;
+        margin-top: -4vw;
     }
 }
 
 /* ...existing code... */
+
 
 
