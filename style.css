@@ -450,7 +450,7 @@ body {
 }
 @media (max-width: 370px) {
     .text-content{
-        font-size: 3.7vw;
+        font-size: 3.9vw;
     }
     #profile-image {
         width: 60%;
@@ -481,7 +481,7 @@ body {
         font-size: 7vw; /* Increased font size */
     }
     .text-content{
-        font-size: 3.7vw;
+        font-size: 3.9vw;
     }
 }
 .projects-section {
@@ -794,6 +794,7 @@ img.hover-shadow {
 }
 
 /* ...existing code... */
+
 
 
 
