@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 
-                    <div class="containerproject">
+                    <div class="containerproject" id="myBtn">
                         <img src="media/App1.jpg" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
                         <h4 class="projecttitle">Unitas app</h4>
                         <div class="middleproject">
@@ -107,9 +107,172 @@
                             </div>
                         </div>
                     </div>
-                
-                    
                 </div>
+
+
+
+                <!-- <button id="myBtn">Open Slideshow</button> -->
+
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <div class="slideshow-container">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img class="modalimg" src="/media/App1.jpg" style="width:100%" alt="The Woods Wide">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img class="modalimg" src="/media/App2.jpg" style="width:100%" alt="Cinque Terre Wide">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img class="modalimg" src="/media/App3.jpg" style="width:100%" alt="Mountains Wide">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img class="modalimg" src="/media/App4.jpg" style="width:100%" alt="Northern Lights Wide">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img class="modalimg" src="/media/App5.jpg" style="width:100%" alt="Nature Wide">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img class="modalimg" src="/media/App6.jpg" style="width:100%" alt="Snow Wide">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" src="/media/App1.jpg" style="width:80%" onclick="currentSlide(1)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/media/App2.jpg" style="width:80%" onclick="currentSlide(2)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/media/App3.jpg" style="width:80%" onclick="currentSlide(3)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/media/App4.jpg" style="width:80%" onclick="currentSlide(4)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/media/App5.jpg" style="width:80%" onclick="currentSlide(5)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/media/App6.jpg" style="width:80%" onclick="currentSlide(6)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+                
+                <script>
+                    // --- Modal Functionality ---
+                    var modal = document.getElementById("myModal");
+                    window.addEventListener("hashchange", function() {
+                        if (modal.style.display === "block") {
+                            modal.style.display = "none"; // Close the modal
+                            console.log("Modal closed due to hash change.");
+                        }
+                    });
+                    var btn = document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+
+                    document.addEventListener("DOMContentLoaded", function() {
+                        modal.style.display = "none"; // Ensure modal is closed on page load
+                    });
+
+                    btn.onclick = function() {
+                        modal.style.display = "block"; // Open the modal
+                        currentSlide(slideIndex); // Initialize the slideshow
+                    };
+                    
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                    
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                    
+                    // --- Slideshow Functionality ---
+                    let slideIndex = 1;
+                    // We will call showSlides() initially when the modal opens,
+                    // so no need to call it here globally when the page loads.
+                    // showSlides(slideIndex); // Removed global call
+                    
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                        // Check if modal is visible before trying to access elements
+                        // This prevents errors if showSlides is somehow called while modal is hidden
+                        if (modal.style.display !== "block" && n === undefined) {
+                             // If modal is hidden and we are not explicitly setting a slide, do nothing
+                             // This prevents initialization errors on page load
+                            return;
+                        }
+                    
+                        let i;
+                        // Important: Get elements *after* modal is potentially displayed
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("demo");
+                        let captionText = document.getElementById("caption");
+                    
+                        // Ensure elements exist before proceeding (robustness)
+                        if (!slides.length || !dots.length || !captionText) {
+                            console.error("Slideshow elements not found. Ensure modal is open or elements exist.");
+                            return;
+                        }
+                    
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                    
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                    
+                        // Ensure slideIndex is valid before accessing elements
+                        if (slideIndex < 1 || slideIndex > slides.length) {
+                          console.error("Invalid slide index:", slideIndex);
+                          return;
+                        }
+                    
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                        captionText.innerHTML = dots[slideIndex-1].alt;
+                    }
+                    
+                    </script>
+
+
+
+
             </section>
             <section class="cv-section">
                 <div class="contact-container">     
