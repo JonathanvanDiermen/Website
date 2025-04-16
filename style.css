@@ -552,9 +552,6 @@ img.hover-shadow {
     .cv-container {
         font-size: 1.8vw;
     }
-    .textproject {
-        font-size: 15vw;
-    }
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -582,7 +579,7 @@ img.hover-shadow {
         font-size: 100%;
     }
     .cv-container {
-        font-size: 2.5vw;
+        font-size: 2.4vw;
     }
 }
 @media (max-width: 612px) {
