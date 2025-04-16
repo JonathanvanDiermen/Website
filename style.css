@@ -277,213 +277,6 @@ body {
     padding: 0.5vw;
     border-radius: 5%;
 }
-@media (max-width: 950px) {
-    .cv-container {
-        font-size: 1.8vw;
-    }
-    .textproject {
-        font-size: 15vw;
-    }
-}
-@media (max-width: 720px) {
-    .text-content {
-        margin-left: 7%;
-        font-size: 100%;
-    }
-    .cv-container {
-        font-size: 2.5vw;
-    }
-}
-
-@media (max-width: 570px) {
-    .logo {
-        margin: 0 auto;
-        width: 15vw;
-        height: 15vw;
-        display: block;
-        pointer-events: none;
-    }
-    #welcome-message {
-        position: relative;
-        top: 0;
-        left: 0;;
-        width: 100%;
-        height: auto;
-        margin: 5%;
-        font-size: 5vw; /* Increased font size */
-    }
-
-    .intro-text {
-        position: relative;
-        top: 0;
-        left: 5%;
-        width: 90%;
-        height: auto;
-        margin: 0;
-        font-size: 4vw; /* Increased font size */
-        padding-bottom: 5%;
-    }
-
-    #profile-image {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 50%;
-        margin: 0 auto;
-        display: block;
-    }
-    .contact-item .tooltip {
-        left: -50%;
-    }
-    .cv-links {
-        font-size: 4vw;
-        z-index: 1;
-    }
-    .text-content {
-        margin-left: 10%;
-        margin-right: 3%;
-        margin-top: -15%;
-        font-size: 95%;
-    }
-    .cv-container {
-        font-size: 3vw;
-    }
-    .contact-item {
-        height: 4vw;
-        width: 4vw;
-    }
-    #linkedin { margin-right: 3%; }
-    #github { margin-right: 3%; }
-    #figma { margin-right: 45%; }
-    #phone { margin-left: 3%; }
-    #email { margin-left: 3%; }
-    #whatsapp { margin-left: 3%; }
-    #name-title {
-        font-size: 3vw;
-        margin-top: -3.9%;
-    }
-    .cv-link:link,
-    .cv-link:visited {
-        padding: 5px;
-        font-size: 3vw;
-        margin: 0 1%;
-    }
-    .section-title {
-        margin-top: 0;
-    }
-    .cv-title{
-        margin-top: -1vw;
-    }
-    .cv-institution{
-        margin-top: -2.2vw;
-    }
-    .cv-duration{
-        margin-top: -2vw;
-    }
-    .cv-description{
-        margin-top: -1vw;
-    }
-    .skills-header-tekst{
-        font-size: 3vw;
-        margin-bottom: 1vw;
-        margin-top: -1vw;	
-    }
-    .skills-left {
-        position: absolute;
-        width: 100%;
-        left: 5%;
-        color: gold;
-        font-size: 2.6vw;
-    }
-    .tools-middle {
-        position: absolute;
-        right: 32%;
-        width: 35%;
-        font-size: 2.6vw;
-        margin-top: 50%;
-    }
-    .language-right {
-        margin-top: 0%;
-        position: absolute;
-        left: 52%;
-        width: 65%;
-        font-size: 2.6vw;
-    }
-    .stars-left {
-        position: absolute;
-        left: 29%;
-        margin-top: -2.65vw;
-        color: white;
-        font-size: 2.2vw;
-    }
-    .stars-middle {
-        position: absolute;
-        left: 70%;
-        margin-top: -2.65vw;
-        width: 50%;
-        color: white;
-        font-size: 2.2vw;
-    }
-    .stars-right {
-        position: absolute;
-        left: 50%;
-        margin-top: -2.65vw;
-        color: white;
-        font-size: 2.2vw;
-    }
-    #skills-hover {
-        list-style-type: none;
-        transition: 0.3s;
-        width: 41vw;
-    }
-    #tools-hover {
-        list-style-type: none;
-        transition: 0.3s;
-        width: 37vw;
-    }
-    #language-hover {
-        list-style-type: none;
-        transition: 0.3s;
-        width: 45vw;
-    }
-    
-}
-@media (max-width: 370px) {
-    .text-content{
-        font-size: 3.7vw;
-    }
-    #profile-image {
-        width: 60%;
-    }
-    #welcome-message {
-        width: 90%;
-        font-size: 8vw; /* Increased font size */
-    }
-
-    .intro-text {
-        font-size: 5vw; /* Increased font size */
-    }
-    .contact-item .tooltip {
-        left: -60%;
-        font-size: 2.8vw;
-    }
-}
-@media (max-width: 290px) {
-    #profile-image {
-        width: 60%;
-    }
-    #welcome-message {
-        width: 90%;
-        font-size: 10vw; /* Increased font size */
-    }
-
-    .intro-text {
-        font-size: 7vw; /* Increased font size */
-    }
-    .text-content{
-        font-size: 3.7vw;
-    }
-}
 .projects-section {
     display: inline-block;
     height: 100vh;
@@ -756,6 +549,12 @@ img.hover-shadow {
         margin-top: -3.9%;
         font-size: 1.2vw;
     }
+    .cv-container {
+        font-size: 1.8vw;
+    }
+    .textproject {
+        font-size: 15vw;
+    }
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -777,7 +576,15 @@ img.hover-shadow {
         margin-top: 2.5%;
     }
 }
-
+@media (max-width: 720px) {
+    .text-content {
+        margin-left: 7%;
+        font-size: 100%;
+    }
+    .cv-container {
+        font-size: 2.5vw;
+    }
+}
 @media (max-width: 612px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr); /* Two equal columns */
@@ -795,6 +602,194 @@ img.hover-shadow {
         margin-top: -4vw;
     }
 }
+@media (max-width: 570px) {
+    .logo {
+        margin: 0 auto;
+        width: 15vw;
+        height: 15vw;
+        display: block;
+        pointer-events: none;
+    }
+    #welcome-message {
+        position: relative;
+        top: 0;
+        left: 0;;
+        width: 100%;
+        height: auto;
+        margin: 5%;
+        font-size: 5vw; /* Increased font size */
+    }
 
+    .intro-text {
+        position: relative;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        height: auto;
+        margin: 0;
+        font-size: 4vw; /* Increased font size */
+        padding-bottom: 5%;
+    }
+
+    #profile-image {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    .contact-item .tooltip {
+        left: -50%;
+    }
+    .cv-links {
+        font-size: 4vw;
+        z-index: 1;
+    }
+    .text-content {
+        margin-left: 10%;
+        margin-right: 3%;
+        margin-top: -15%;
+        font-size: 95%;
+    }
+    .cv-container {
+        font-size: 3vw;
+    }
+    .contact-item {
+        height: 4vw;
+        width: 4vw;
+    }
+    #linkedin { margin-right: 3%; }
+    #github { margin-right: 3%; }
+    #figma { margin-right: 45%; }
+    #phone { margin-left: 3%; }
+    #email { margin-left: 3%; }
+    #whatsapp { margin-left: 3%; }
+    #name-title {
+        font-size: 3vw;
+        margin-top: -3.9%;
+    }
+    .cv-link:link,
+    .cv-link:visited {
+        padding: 5px;
+        font-size: 3vw;
+        margin: 0 1%;
+    }
+    .section-title {
+        margin-top: 0;
+    }
+    .cv-title{
+        margin-top: -1vw;
+    }
+    .cv-institution{
+        margin-top: -2.2vw;
+    }
+    .cv-duration{
+        margin-top: -2vw;
+    }
+    .cv-description{
+        margin-top: -1vw;
+    }
+    .skills-header-tekst{
+        font-size: 3vw;
+        margin-bottom: 1vw;
+        margin-top: -1vw;	
+    }
+    .skills-left {
+        position: absolute;
+        width: 100%;
+        left: 5%;
+        color: gold;
+        font-size: 2.6vw;
+    }
+    .tools-middle {
+        position: absolute;
+        right: 32%;
+        width: 35%;
+        font-size: 2.6vw;
+        margin-top: 50%;
+    }
+    .language-right {
+        margin-top: 0%;
+        position: absolute;
+        left: 52%;
+        width: 65%;
+        font-size: 2.6vw;
+    }
+    .stars-left {
+        position: absolute;
+        left: 29%;
+        margin-top: -2.65vw;
+        color: white;
+        font-size: 2.2vw;
+    }
+    .stars-middle {
+        position: absolute;
+        left: 70%;
+        margin-top: -2.65vw;
+        width: 50%;
+        color: white;
+        font-size: 2.2vw;
+    }
+    .stars-right {
+        position: absolute;
+        left: 50%;
+        margin-top: -2.65vw;
+        color: white;
+        font-size: 2.2vw;
+    }
+    #skills-hover {
+        list-style-type: none;
+        transition: 0.3s;
+        width: 41vw;
+    }
+    #tools-hover {
+        list-style-type: none;
+        transition: 0.3s;
+        width: 37vw;
+    }
+    #language-hover {
+        list-style-type: none;
+        transition: 0.3s;
+        width: 45vw;
+    }
+    
+}
+@media (max-width: 370px) {
+    .text-content{
+        font-size: 3.7vw;
+    }
+    #profile-image {
+        width: 60%;
+    }
+    #welcome-message {
+        width: 90%;
+        font-size: 8vw; /* Increased font size */
+    }
+
+    .intro-text {
+        font-size: 5vw; /* Increased font size */
+    }
+    .contact-item .tooltip {
+        left: -60%;
+        font-size: 2.8vw;
+    }
+}
+@media (max-width: 290px) {
+    #profile-image {
+        width: 60%;
+    }
+    #welcome-message {
+        width: 90%;
+        font-size: 10vw; /* Increased font size */
+    }
+
+    .intro-text {
+        font-size: 7vw; /* Increased font size */
+    }
+    .text-content{
+        font-size: 3.7vw;
+    }
+}
 /* ...existing code... */
 
