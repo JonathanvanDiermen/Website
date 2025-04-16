@@ -544,11 +544,11 @@ img.hover-shadow {
     }
     #welcome-message {
         width: 90%;
-        font-size: 8vw; /* Increased font size */
+        font-size: 3vw; /* Increased font size */
     }
 
     .intro-text {
-        font-size: 5vw; /* Increased font size */
+        font-size: 2.7vw; /* Increased font size */
     }
     .text-content{
         font-size: 3.2vw;
