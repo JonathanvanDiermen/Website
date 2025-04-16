@@ -602,8 +602,8 @@ img.hover-shadow {
 @media (max-width: 570px) {
     .logo {
         margin: 0 auto;
-        width: 15vw;
-        height: 15vw;
+        width: 13vw;
+        height: 11vw;
         display: block;
         pointer-events: none;
     }
@@ -632,7 +632,7 @@ img.hover-shadow {
         position: relative;
         top: 0;
         left: 0;
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
         display: block;
     }
@@ -757,7 +757,7 @@ img.hover-shadow {
         font-size: 3.7vw;
     }
     #profile-image {
-        width: 60%;
+        width: 55%;
     }
     #welcome-message {
         width: 90%;
@@ -774,7 +774,7 @@ img.hover-shadow {
 }
 @media (max-width: 290px) {
     #profile-image {
-        width: 60%;
+        width: 55%;
     }
     #welcome-message {
         width: 90%;
