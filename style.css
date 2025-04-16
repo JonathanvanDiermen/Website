@@ -554,11 +554,6 @@ img.hover-shadow {
         font-size: 3.2vw;
     }
 }
-@Media (max-height: 650px){
-    #profile-image {
-        width: 30%;
-    }
-}
 @media (max-width: 1150px) {
     .textproject {
         margin-top: -3.2vw;
@@ -807,6 +802,22 @@ img.hover-shadow {
     }
     .text-content{
         font-size: 3.7vw;
+    }
+}
+@Media (max-height: 650px){
+    #profile-image {
+        width: 50%;
+    }
+    #welcome-message {
+        width: 90%;
+        font-size: 5.2vw; /* Increased font size */
+    }
+
+    .intro-text {
+        font-size: 4.5vw; /* Increased font size */
+    }
+    .text-content{
+        font-size: 3.2vw;
     }
 }
 /* ...existing code... */
