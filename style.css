@@ -789,4 +789,25 @@ img.hover-shadow {
     }
 }
 /* ...existing code... */
+@Media (max-height: 730px){
+    #profile-image {
+        width: 40%;
+    }
+    #welcome-message {
+        width: 90%;
+        font-size: 8vw; /* Increased font size */
+    }
+
+    .intro-text {
+        font-size: 5vw; /* Increased font size */
+    }
+    .text-content{
+        font-size: 3.2vw;
+    }
+}
+@Media (max-height: 650px){
+    #profile-image {
+        width: 30%;
+    }
+}
 
