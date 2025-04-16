@@ -285,13 +285,13 @@ body {
         font-size: 15vw;
     }
 }
-@media (max-width: 710px) {
+@media (max-width: 720px) {
     .text-content {
         margin-left: 7%;
-        font-size: 95%;
+        font-size: 90%;
     }
     .cv-container {
-        font-size: 2.3vw;
+        font-size: 2.1vw;
     }
 }
 
