@@ -64,210 +64,396 @@
                 </div>
                 <h5 class="cv-links">My side projects</h5>
                 <div class="projects-container"> 
-                    <div class="containerproject">
+                    <div class="containerproject modal-trigger" data-modal-target="myModal1">
                         <img src="media/SSH0.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
                         <h4 class="projecttitle">SSH app</h4>
                         <div class="middleproject">
                             <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
                                 For the Requirements Engineering course, a teammate and I took on the role of analysts for our client, SSH, to develop an MVP of a new app designed to completely replace their website. To create a high-fidelity prototype, we also had to learn how to use Mendix.
-                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                                <p>Click here to see more</p>
                             </div>
                         </div>
                     </div>
                 
-                    <div class="containerproject">
+                    <div class="containerproject modal-trigger" data-modal-target="myModal2">
                         <img src="media/Pushbullet.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
                         <h4 class="projecttitle">AI Buddy</h4>
                         <div class="middleproject">
                             <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
                                 Don’t you hate it when you forget to set your alarm or find out too late that there’s a massive traffic jam, making you late? I’ve built a personal assistant that helps me stay ahead, integrating with my calendar, tasks, Maps, Weather, Philips Hue, and many more APIs.
-                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                                <p>Click here to see more</p>
                             </div>
                         </div>
                     </div>
                 
-                    <div class="containerproject" id="myBtn">
+                    <div class="containerproject modal-trigger" data-modal-target="myModal3">
                         <img src="media/App1.jpg" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
                         <h4 class="projecttitle">Unitas app</h4>
                         <div class="middleproject">
                             <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
                                 A group of fellow students and I developed an app for our fraternity, serving over 1,500 users. It allows members to view events, stay updated, make dinner reservations, and many more.
-                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                                <p>Click here to see more</p>
                             </div>
                         </div>
                     </div>
                 
-                    <div class="containerproject">
+                    <div class="containerproject modal-trigger" data-modal-target="myModal4">
                         <img src="media/SpiceRack4.png" alt="Image not available" class="imageproject" style="width:100%" onclick="openModal();currentSlide(1)">
                         <h4 class="projecttitle">Smart spice jar</h4>
                         <div class="middleproject">
                             <div class="textproject" id="textprojectchange" onclick="openModal();currentSlide(1)">
                                 For the Interaction Technology Innovation course, we designed a product that had to be both smart and enchanting. Our solution? A smart spice rack! Simply ask for a spice mix, and the corresponding jars will light up while a voice guides you through the spices and how to use them.
-                                <p style="text-decoration: line-through 10%;">Click here to see more</p>
+                                <p>Click here to see more</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-                <!-- <button id="myBtn">Open Slideshow</button> -->
-
-                <div id="myModal" class="modal">
-
+                  
+                  <div id="myModal1" class="modal">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
-
-                        <div class="slideshow-container">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 6</div>
-                                <img class="modalimg" src="media/App1.jpg" style="width:100%" alt="The Woods Wide">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 6</div>
-                                <img class="modalimg" src="media/App2.jpg" style="width:100%" alt="Cinque Terre Wide">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 6</div>
-                                <img class="modalimg" src="media/App3.jpg" style="width:100%" alt="Mountains Wide">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 6</div>
-                                <img class="modalimg" src="media/App4.jpg" style="width:100%" alt="Northern Lights Wide">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">5 / 6</div>
-                                <img class="modalimg" src="media/App5.jpg" style="width:100%" alt="Nature Wide">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">6 / 6</div>
-                                <img class="modalimg" src="media/App6.jpg" style="width:100%" alt="Snow Wide">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-                            <div class="row">
-                                <div class="column">
-                                    <img class="demo cursor" src="media/App1.jpg" style="width:80%" onclick="currentSlide(1)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
-                                </div>
-                                <div class="column">
-                                    <img class="demo cursor" src="media/App2.jpg" style="width:80%" onclick="currentSlide(2)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
-                                </div>
-                                <div class="column">
-                                    <img class="demo cursor" src="media/App3.jpg" style="width:80%" onclick="currentSlide(3)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
-                                </div>
-                                <div class="column">
-                                    <img class="demo cursor" src="media/App4.jpg" style="width:80%" onclick="currentSlide(4)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
-                                </div>
-                                <div class="column">
-                                    <img class="demo cursor" src="media/App5.jpg" style="width:80%" onclick="currentSlide(5)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
-                                </div>
-                                <div class="column">
-                                    <img class="demo cursor" src="media/App6.jpg" style="width:80%" onclick="currentSlide(6)" alt="This is a test to check if all the text will be displayed like a right way it doesnt matter whaat hier staat als hij het maar doet want niemand die het weet tot ziens">
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-                </div> 
-                
-                <script>
-                    // --- Modal Functionality ---
-                    var modal = document.getElementById("myModal");
-                    window.addEventListener("hashchange", function() {
-                        if (modal.style.display === "block") {
-                            modal.style.display = "none"; // Close the modal
-                            console.log("Modal closed due to hash change.");
-                        }
-                    });
-                    var btn = document.getElementById("myBtn");
-                    var span = document.getElementsByClassName("close")[0];
-
-                    document.addEventListener("DOMContentLoaded", function() {
-                        modal.style.display = "none"; // Ensure modal is closed on page load
-                    });
-
-                    btn.onclick = function() {
-                        modal.style.display = "block"; // Open the modal
-                        currentSlide(slideIndex); // Initialize the slideshow
-                    };
+                      <span class="close">&times;</span>
+                      <div class="slideshow-container">
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 4</div>
+                          <img class="modalimg" src="media/SSH0.png" style="width:100%" alt="The Woods Wide (Set 1)">
+                        </div>
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 4</div>
+                          <img class="modalimg" src="media/SSh1.png" style="width:100%" alt="Cinque Terre Wide (Set 1)">
+                        </div>
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 4</div>
+                          <img class="modalimg" src="media/SSh2.png" style="width:100%" alt="Mountains Wide (Set 1)">
+                        </div>
+                        <div class="mySlides">
+                          <div class="numbertext">4 / 4</div>
+                          <img class="modalimg" src="media/SSH3.png" style="width:100%" alt="Northern Lights Wide (Set 1)">
+                        </div>
+                  
+                        <a class="prev" onclick="plusSlides('myModal1', -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides('myModal1', 1)">&#10095;</a>
+                        <div class="caption-container">
+                          <p class="caption"></p> </div>
+                  
+                        <div class="row">
+                          <div class="column">
+                            <img class="demo cursor" src="media/SSH0.png" style="width:80%" onclick="currentSlide('myModal1', 1)" alt="On the homescreen you can perform the actions which according to our research and user study, users found the most important.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/SSh1.png" style="width:80%" onclick="currentSlide('myModal1', 2)" alt="New to SSH was their request to incoperate social events in their app, so that students new to the city can meet each other in real life.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/SSh2.png" style="width:80%" onclick="currentSlide('myModal1', 3)" alt="As a landlord, SSH has to perform a lot of repairs at homes. By incoperateing a repair request function, students can easily contact SSH and ask for repairs.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/SSH3.png" style="width:80%" onclick="currentSlide('myModal1', 4)" alt="SSH found that students often were not at home during repair appoitnments. So a function was added to simply change or cancel the appointment.">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="myModal2" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="slideshow-container">
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 5</div>
+                          <img class="modalimg" src="media/Push_Avond.png" style="width:100%" alt="Photo 1">
+                        </div>
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 5</div>
+                          <img class="modalimg" src="media/Push_Whatsapp.png" style="width:100%" alt="Photo 2">
+                        </div>
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 5</div>
+                          <img class="modalimg" src="media/Push_NextAgenda.png" style="width:100%" alt="Photo 3">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img class="modalimg" src="media/Push_Maps.png" style="width:100%" alt="Photo 4">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5/ 5</div>
+                            <img class="modalimg" src="media/Push_NoWekker.png" style="width:100%" alt="Photo 5">
+                        </div>
+                  
+                        <a class="prev" onclick="plusSlides('myModal2', -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides('myModal2', 1)">&#10095;</a>
+                        <div class="caption-container">
+                          <p class="caption"></p> </div>
+                  
+                        <div class="row">
+                          <div class="column">
+                            <img class="demo cursor" src="media/Push_Avond.png" style="width:80%" onclick="currentSlide('myModal2', 1)" alt="In the evening I can see when and where I need to be tommorrow and how late I need to wakeup. If there is a significant weather change in the coming days, I will be notified.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/Push_Whatsapp.png" style="width:80%" onclick="currentSlide('myModal2', 2)" alt="If it's someones birthday, I get a link to a whatsapp chat with them in the morning and i can send them a pre-written birthday message.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/Push_NextAgenda.png" style="width:80%" onclick="currentSlide('myModal2', 3)" alt="During the day, I stay up to date for my next agenda items so that I will never be late to an appointment again.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/Push_Maps.png" style="width:80%" onclick="currentSlide('myModal2', 3)" alt="If I have to leave, I get a notification with a link to google maps with the route I need to take.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/Push_NoWekker.png" style="width:80%" onclick="currentSlide('myModal2', 3)" alt="If I want to sleep in, I can simply ask my assistant to set my alarm for a later time, or with a button disable the Alarm.">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="myModal3" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="slideshow-container">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 5</div>
+                            <img class="modalimg" src="media/App1.jpg" style="width:100%;" alt="App screen 1">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 5</div>
+                            <img class="modalimg" src="media/App4.jpg" style="width:100%" alt="App screen 2">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <img class="modalimg" src="media/App5.jpg" style="width:100%" alt="App screen 3">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img class="modalimg" src="media/App6.jpg" style="width:100%" alt="App screen 4">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <img class="modalimg" src="media/App7.jpg" style="width:100%" alt="App screen 5">
+                        </div>
+                  
+                        <a class="prev" onclick="plusSlides('myModal3', -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides('myModal3', 1)">&#10095;</a>
+                        <div class="caption-container">
+                          <p class="caption"></p> </div>
+                  
+                        <div class="row">
+                          <div class="column">
+                            <img class="demo cursor" src="media/App1.jpg" style="width:80%" onclick="currentSlide('myModal3', 1)" alt="On the homescreen, users can find the agenda of the society and messages from the board to get a quick update.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/App4.jpg" style="width:80%" onclick="currentSlide('myModal3', 2)" alt="The app also has a photo library of all the activities the society has done. Some maps can be hidden for certain users.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/App5.jpg" style="width:80%" onclick="currentSlide('myModal3', 2)" alt="The society and its committees also provide a central agenda detailing all their activities. Users can register themselves here.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/App6.jpg" style="width:80%" onclick="currentSlide('myModal3', 2)" alt="Every agenda item has a detailed page where users can buy a ticket and see if their friends have registered themselves for the same event.">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/App7.jpg" style="width:80%" onclick="currentSlide('myModal3', 2)" alt="Users can make reservations for dinner at the society. They can make an order for their group choose and between 3 menus that switch every week.">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="myModal4" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="slideshow-container">
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 5</div>
+                          <img class="modalimg" src="media/SpiceRack0.png" style="width:100%" alt="Only Image (Set 4)">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 5</div>
+                            <img class="modalimg" src="media/SpiceRack1.png" style="width:100%" alt="Only Image (Set 4)">
+                          </div>
+                          <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <img class="modalimg" src="media/SpiceRack2.png" style="width:100%" alt="Only Image (Set 4)">
+                          </div>
+                          <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img class="modalimg" src="media/SpiceRack3.png" style="width:100%" alt="Only Image (Set 4)">
+                          </div>
+                          <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <img class="modalimg" src="media/SpiceRack4.png" style="width:100%" alt="Only Image (Set 4)">
+                          </div>
+                  
+                        <a class="prev" onclick="plusSlides('myModal4', -1)" style="display: none;">&#10094;</a>
+                        <a class="next" onclick="plusSlides('myModal4', 1)" style="display: none;">&#10095;</a>
+                        <div class="caption-container">
+                          <p class="caption"></p> </div>
+                  
+                        <div class="row">
+                          <div class="column">
+                            <img class="demo cursor" src="media/SpiceRack0.png" style="width:80%" onclick="currentSlide('myModal4', 1)" alt="Only Image thumb (Set 4)">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/SpiceRack1.png" style="width:80%" onclick="currentSlide('myModal4', 1)" alt="Only Image thumb (Set 4)">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/SpiceRack2.png" style="width:80%" onclick="currentSlide('myModal4', 1)" alt="Only Image thumb (Set 4)">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/SpiceRack3.png" style="width:80%" onclick="currentSlide('myModal4', 1)" alt="Only Image thumb (Set 4)">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="media/SpiceRack4.png" style="width:80%" onclick="currentSlide('myModal4', 1)" alt="Only Image thumb (Set 4)">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <script>
+                    // The JavaScript code provided in the previous answer
+                    // that handles multiple modals using '.modal-trigger'
+                    // and 'data-modal-target' remains the SAME.
+                    // No changes needed to the script itself.
                     
-                    span.onclick = function() {
-                        modal.style.display = "none";
+                    // Object to store the current slide index for each modal
+                    let slideIndexes = {};
+                    
+                    // Function to open a specific modal
+                    function openModal(modalId) {
+                      const modal = document.getElementById(modalId);
+                      if (modal) {
+                        modal.style.display = "block";
+                        if (slideIndexes[modalId] === undefined) {
+                            slideIndexes[modalId] = 1;
+                        }
+                        showSlides(modalId, slideIndexes[modalId]);
+                      } else {
+                          console.error("Modal with ID " + modalId + " not found.");
+                      }
                     }
                     
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
+                    // Function to close a specific modal
+                    function closeModal(modalElement) {
+                       if (modalElement) {
+                         modalElement.style.display = "none";
+                       }
+                    }
+                    
+                    // Add event listeners to all trigger buttons/divs
+                    document.querySelectorAll('.modal-trigger').forEach(triggerElement => {
+                      triggerElement.style.cursor = 'pointer'; // Add pointer cursor to triggers
+                      triggerElement.onclick = function() {
+                        // 'this' refers to the clicked element (the div.containerproject)
+                        const modalId = this.getAttribute('data-modal-target');
+                        if (modalId) { // Check if the attribute exists
+                            openModal(modalId);
+                        } else {
+                            console.error("Clicked trigger element is missing data-modal-target attribute.");
                         }
+                      };
+                    });
+                    
+                    // Add event listeners to all close buttons
+                    document.querySelectorAll('.modal .close').forEach(span => {
+                      span.onclick = function() {
+                        const modal = this.closest('.modal');
+                        closeModal(modal);
+                      };
+                    });
+                    
+                    // Close modal if user clicks outside of the modal content
+                    window.onclick = function(event) {
+                      if (event.target.classList.contains('modal')) {
+                        closeModal(event.target);
+                      }
                     }
                     
                     // --- Slideshow Functionality ---
-                    let slideIndex = 1;
-                    // We will call showSlides() initially when the modal opens,
-                    // so no need to call it here globally when the page loads.
-                    // showSlides(slideIndex); // Removed global call
-                    
-                    function plusSlides(n) {
-                        showSlides(slideIndex += n);
+                    function plusSlides(modalId, n) {
+                        if (slideIndexes[modalId] === undefined) slideIndexes[modalId] = 1;
+                        slideIndexes[modalId] += n;
+                        showSlides(modalId, slideIndexes[modalId]);
                     }
                     
-                    function currentSlide(n) {
-                        showSlides(slideIndex = n);
+                    function currentSlide(modalId, n) {
+                        slideIndexes[modalId] = n;
+                        showSlides(modalId, slideIndexes[modalId]);
                     }
                     
-                    function showSlides(n) {
-                        // Check if modal is visible before trying to access elements
-                        // This prevents errors if showSlides is somehow called while modal is hidden
-                        if (modal.style.display !== "block" && n === undefined) {
-                             // If modal is hidden and we are not explicitly setting a slide, do nothing
-                             // This prevents initialization errors on page load
+                    function showSlides(modalId, n) {
+                        const modalElement = document.getElementById(modalId);
+                        if (!modalElement) {
+                            console.error("Modal element not found:", modalId);
                             return;
                         }
-                    
                         let i;
-                        // Important: Get elements *after* modal is potentially displayed
-                        let slides = document.getElementsByClassName("mySlides");
-                        let dots = document.getElementsByClassName("demo");
-                        let captionText = document.getElementById("caption");
+                        let slides = modalElement.getElementsByClassName("mySlides");
+                        let dots = modalElement.getElementsByClassName("demo");
+                        let captionText = modalElement.querySelector(".caption-container .caption");
                     
-                        // Ensure elements exist before proceeding (robustness)
-                        if (!slides.length || !dots.length || !captionText) {
-                            console.error("Slideshow elements not found. Ensure modal is open or elements exist.");
+                        if (!slides.length) {
+                            // Handle no slides case (hide controls, etc.)
+                             const prevButton = modalElement.querySelector('.prev');
+                             const nextButton = modalElement.querySelector('.next');
+                             const captionContainer = modalElement.querySelector('.caption-container');
+                             const rowContainer = modalElement.querySelector('.row');
+                             if(prevButton) prevButton.style.display = 'none';
+                             if(nextButton) nextButton.style.display = 'none';
+                             if(captionText) captionText.innerHTML = "";
+                             if(captionContainer) captionContainer.style.display = 'none';
+                             if(rowContainer) rowContainer.style.display = 'none';
                             return;
                         }
-                    
-                        if (n > slides.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = slides.length}
-                    
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
+                        if (!captionText) {
+                            console.error("Caption element not found in modal:", modalId);
                         }
                     
-                        // Ensure slideIndex is valid before accessing elements
-                        if (slideIndex < 1 || slideIndex > slides.length) {
-                          console.error("Invalid slide index:", slideIndex);
-                          return;
+                        let currentSlideIndex = slideIndexes[modalId];
+                        if (n > slides.length) { currentSlideIndex = 1 }
+                        if (n < 1) { currentSlideIndex = slides.length }
+                        slideIndexes[modalId] = currentSlideIndex;
+                    
+                        for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+                        for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
+                    
+                        if (slides[currentSlideIndex - 1]) {
+                             slides[currentSlideIndex - 1].style.display = "block";
+                             if (dots[currentSlideIndex - 1]) {
+                                 dots[currentSlideIndex - 1].className += " active";
+                                 if(captionText) captionText.innerHTML = dots[currentSlideIndex - 1].alt;
+                             } else {
+                                 const slideImg = slides[currentSlideIndex - 1].querySelector('img');
+                                 if(captionText) captionText.innerHTML = slideImg ? slideImg.alt : "";
+                             }
+                        } else {
+                            console.error("Slide index out of bounds:", currentSlideIndex, "for modal:", modalId);
                         }
                     
-                        slides[slideIndex-1].style.display = "block";
-                        dots[slideIndex-1].className += " active";
-                        captionText.innerHTML = dots[slideIndex-1].alt;
+                        const prevButton = modalElement.querySelector('.prev');
+                        const nextButton = modalElement.querySelector('.next');
+                        if (prevButton && nextButton) {
+                            const displayStyle = slides.length <= 1 ? 'none' : 'block';
+                            prevButton.style.display = displayStyle;
+                            nextButton.style.display = displayStyle;
+                        }
+                         const captionContainer = modalElement.querySelector('.caption-container');
+                         const rowContainer = modalElement.querySelector('.row');
+                         if(captionContainer) captionContainer.style.display = 'block';
+                         if(rowContainer) rowContainer.style.display = dots.length > 0 ? 'block' : 'none';
                     }
                     
+                    // --- Initial setup and event listeners ---
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.querySelectorAll('.modal').forEach(modal => {
+                            modal.style.display = "none";
+                        });
+                    });
+                    
+                    window.addEventListener("hashchange", function() {
+                        document.querySelectorAll('.modal').forEach(modal => {
+                            if (modal.style.display === "block") {
+                                 closeModal(modal);
+                            }
+                        });
+                    });
                     </script>
 
 
@@ -414,7 +600,7 @@
                         </li>
                         <br>
                         <li id="tools-hover" class="tool-item tekst">PowerBI (1 year) 
-                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                            <div class="stars-middle"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                         </li>
                     </div>
                     <div class="language-right">

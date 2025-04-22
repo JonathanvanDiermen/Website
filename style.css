@@ -447,20 +447,6 @@ img.hover-shadow {
 #textprojectchange {
     
 }
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
 .imagecontainer {
     position: relative;
     display: inline-block;
@@ -570,6 +556,7 @@ body {
     margin: auto; /* Still useful with flex */
     padding: 0; /* Slideshow container will handle padding */
     border: 1px solid #888;
+    border-radius: 15px;
     position: relative; /* For close button positioning */
     width: 95%; /* More width on small screens */
     max-width: 600px; /* Max width on large screens */
@@ -689,7 +676,7 @@ img {
     width: 100%; /* Take full width */
     flex-shrink: 0; /* Prevent shrinking */
 }
-#caption {
+.caption {
     margin: 0; /* Remove default paragraph margin */
     padding: 5px 0;
 }
@@ -697,34 +684,37 @@ img {
 /* Thumbnail Row */
 .row {
     background-color: #000;
-    padding: 10px 5px; /* Add padding */
-    width: 100%; /* Take full width */
-    text-align: center; /* Center columns */
-    flex-shrink: 0; /* Prevent shrinking */
-    overflow-x: auto; /* Allow horizontal scrolling for thumbnails if needed */
-    white-space: nowrap; /* Keep thumbnails in one line for scrolling */
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both; /* Still useful fallback */
+    padding: 10px 5px;     /* Vertical and horizontal padding */
+    width: 100%;
+    text-align: center;    /* Centers the inline-block columns */
+    overflow-x: auto;    /* Allows horizontal scrolling if columns overflow */
+    white-space: nowrap;   /* Keeps columns on a single line */
+    font-size: 0;          /* Removes whitespace nodes between inline-block columns */
+                           /* Note: Add this only if columns have unwanted space between them */
 }
 
 /* Thumbnail Columns - Responsive */
 .column {
-    /* float: left; Replaced by inline-block */
-    display: inline-block; /* Allow horizontal scrolling/wrapping */
-    width: 100px; /* Fixed width for thumbnails */
-    max-width: 16.66%; /* Keep max-width relative for large screens */
-    padding: 0 4px; /* Spacing */
-    vertical-align: top; /* Align tops */
-    white-space: normal; /* Allow content inside to wrap */
+    display: inline-block; /* Arrange columns like text characters */
+    width: 100px;          /* Fixed width for each thumbnail container */
+    padding: 0 4px;        /* Horizontal spacing for content inside column */
+    margin: 0 2px;         /* Optional: Adds small space *between* column borders */
+    vertical-align: top;   /* Align columns at the top */
+    white-space: normal;   /* Allow content inside column to wrap (if any) */
+    font-size: 1rem;       /* Reset font size (use your base font size like 16px or 1em) */
+    text-align: center;    /* Center the image *within* this column */
+    box-sizing: border-box;/* Include padding in the width calculation */
 }
 
-.column img {
-    margin-bottom: -4px; /* Fix potential gap */
-    width: 100%; /* Make thumbnail images fill column */
+.column img.demo {         /* Targeting the specific image class */
+    /* The inline style="width:80%" will take precedence */
+    /* This CSS centers the 80% width image within the column */
+    display: block;        /* Change from inline to block */
+    margin-left: auto;     /* Auto margins center block elements */
+    margin-right: auto;    /* Auto margins center block elements */
+    max-width: 100%;       /* Safety: ensures image never overflows column */
+    height: auto;          /* Maintain aspect ratio */
+    vertical-align: middle;/* Helps remove potential bottom space (alternative to display:block) */
 }
 
 .demo {
