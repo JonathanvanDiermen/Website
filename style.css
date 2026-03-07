@@ -1010,7 +1010,7 @@ img {
 }
 @media (max-width: 370px) {
     .text-content{
-        font-size: 3.7vw;
+        font-size: 3.2vw;
     }
     #profile-image {
         width: 55%;
@@ -1041,7 +1041,7 @@ img {
         font-size: 7vw; /* Increased font size */
     }
     .text-content{
-        font-size: 3.7vw;
+        font-size: 3.6vw;
     }
 }
 @Media (max-height: 650px){
