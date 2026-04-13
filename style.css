@@ -109,6 +109,57 @@ body {
     visibility: visible;
 }
 
+.Studyplan-section {
+    display: inline-block;
+    height: 100vh;
+    margin-top: 1vw;
+}
+.Studyplan-container {
+    position: relative;
+    z-index: 100;
+    height: 100%; /* Make cv-container take the full height of cv-section */
+    margin-top: -4.5vw; /* Adjust margin as needed */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center children vertically */
+    font-size: 1vw;
+}
+
+.Studyplan-links {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 3.9vw;
+    padding-top: 0.5%;
+}
+.Studyplan-title{
+        margin-top: 1.2vw;
+    }
+.Studyplan-link:link,
+.Studyplan-link:visited {
+    background-color: aqua;
+    font-size: 20px;
+    color: black;
+    padding: 9px;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    margin: 0 2%;
+}
+
+.Studyplan-link:hover,
+.Studyplan-link:active {
+    background-color: aquamarine;
+}
+.Study-container {
+    width: 48%; /* Adjust width to fit within text-content */
+    float: right; /* Float to the right */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.Study-description {
+    margin-top: 9vw;
+}
 
 #linkedin { margin-right: 5%; }
 #github { margin-right: 5%; }
@@ -869,6 +920,14 @@ img {
         top: 0;
         left: 0;
         width: 40%;
+        margin: 0 auto;
+        display: block;
+    }
+    #Studyplan {
+        position: relative;
+        top: -2vw;
+        left: 0;
+        width: 100%;
         margin: 0 auto;
         display: block;
     }
